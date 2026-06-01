@@ -27,7 +27,7 @@
         .intro-screen {
             position: fixed;
             inset: 0;
-            background-color: #12221a; /* Verde oscuro elegante */
+            background-color: #12221a;
             z-index: 100;
             display: flex;
             justify-content: center;
@@ -56,14 +56,26 @@
                 </div>
 
                 <div class="hidden md:flex space-x-8 h-full items-center">
+                    
                     <div class="relative group h-full flex items-center">
                         <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
                             Péptidos <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
                         </button>
                         <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
-                            <a href="#productos" onclick="filterCategory('peptidos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Antienvejecimiento</a>
-                            <a href="#productos" onclick="filterCategory('peptidos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Recuperación Tisular</a>
-                            <a href="#productos" onclick="filterCategory('peptidos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Rendimiento Optimizado</a>
+                            <a href="#productos" onclick="filterCategory('peptidos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Todo Péptidos</a>
+                        </div>
+                    </div>
+
+                    <div class="relative group h-full flex items-center">
+                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
+                            Tirzepatida <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
+                        </button>
+                        <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
+                            <a href="#productos" onclick="filterCategory('tirzepatida')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">T.G.</a>
+                            <a href="#productos" onclick="filterCategory('tirzepatida')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Lipoless</a>
+                            <a href="#productos" onclick="filterCategory('tirzepatida')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Tirzec</a>
+                            <a href="#productos" onclick="filterCategory('tirzepatida')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Lipoland</a>
+                            <a href="#productos" onclick="filterCategory('tirzepatida')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Tirzedral</a>
                         </div>
                     </div>
 
@@ -73,30 +85,18 @@
                         </button>
                         <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
                             <a href="#productos" onclick="filterCategory('perfumes')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Extractos de Alta Gama</a>
-                            <a href="#productos" onclick="filterCategory('perfumes')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Colección Botánica</a>
+                            
                         </div>
                     </div>
-
                     <div class="relative group h-full flex items-center">
-                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
-                            Tirzepatida <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
-                        </button>
-                        <div class="absolute top-[100%] left-0 w-64 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
-                            <a href="#productos" onclick="filterCategory('tirzepatida')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Control Metabólico</a>
-                            <a href="#productos" onclick="filterCategory('tirzepatida')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Protocolo Bienestar Integral</a>
-                        </div>
-                    </div>
+    <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
+        Suplementos <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
+    </button>
+    <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
+        <a href="#productos" onclick="filterCategory('suplementos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Línea Premium</a>
+    </div>
+</div>
 
-                    <div class="relative group h-full flex items-center">
-                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
-                            Suplementos <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
-                        </button>
-                        <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
-                            <a href="#productos" onclick="filterCategory('suplementos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Nutrición Celular</a>
-                            <a href="#productos" onclick="filterCategory('suplementos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Minerales Quelados</a>
-                            <a href="#productos" onclick="filterCategory('suplementos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Vitaminas Orgánicas</a>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="flex items-center space-x-4">
@@ -127,7 +127,11 @@
             <div>
                 <p class="font-semibold text-xs uppercase tracking-wider text-stone-400 mb-1">Tirzepatida</p>
                 <div class="pl-3 flex flex-col gap-1 text-sm text-stone-600">
-                    <a href="#productos" onclick="filterCategory('tirzepatida'); toggleMobileMenu()">Soluciones Clínicas</a>
+                    <a href="#productos" onclick="filterCategory('tirzepatida'); toggleMobileMenu()">T.G.</a>
+                    <a href="#productos" onclick="filterCategory('tirzepatida'); toggleMobileMenu()">Lipoless</a>
+                    <a href="#productos" onclick="filterCategory('tirzepatida'); toggleMobileMenu()">Tirzec</a>
+                    <a href="#productos" onclick="filterCategory('tirzepatida'); toggleMobileMenu()">Lipoland</a>
+                    <a href="#productos" onclick="filterCategory('tirzepatida'); toggleMobileMenu()">Tirzedral</a>
                 </div>
             </div>
             <div>
@@ -147,7 +151,7 @@
                 La evolución del cuidado <br><span class="italic text-amber-100 font-normal">biotecnológico y aromático</span>.
             </h2>
             <p class="text-stone-300 font-light max-w-2xl mx-auto text-sm md:text-base leading-relaxed mb-8">
-                En Natural+ fusionamos la pureza de la naturaleza con los avances de la ciencia molecular moderna para ofrecer soluciones de longevidad, nutrición avanzada y alta perfumería.
+                En Natural+ fusionamos la pureza de la naturaleza con los avances de la ciencia molecular moderna para ofrecer solutions de longevidad, nutrición avanzada y alta perfumería.
             </p>
             <a href="#productos" class="inline-block bg-amber-500 hover:bg-amber-600 text-stone-950 font-medium text-xs uppercase tracking-widest px-8 py-4 transition-all rounded shadow-lg">
                 Explorar Colecciones
@@ -166,7 +170,7 @@
         </div>
 
         <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            </div>
+        </div>
     </main>
 
     <div id="cart-sidebar" class="fixed inset-0 z-50 overflow-hidden pointer-events-none">
@@ -189,7 +193,7 @@
                 <div class="p-6 border-t border-stone-100 bg-stone-50">
                     <div class="flex justify-between text-base font-medium text-stone-900 mb-4">
                         <p>Subtotal</p>
-                        <p id="cart-total" class="font-serif text-xl font-bold text-emerald-950">$0.00</p>
+                        <p id="cart-total" class="font-serif text-xl font-bold text-emerald-950">Bs. 0.00</p>
                     </div>
                     <p class="mt-0.5 text-xs text-stone-400 font-light mb-4">Envío premium express asegurado e impuestos incluidos.</p>
                     <button onclick="checkout()" class="w-full bg-emerald-950 hover:bg-emerald-900 text-white font-medium text-xs tracking-widest uppercase py-4 transition-colors rounded shadow-md">
@@ -207,31 +211,37 @@
     </footer>
 
     <script>
-        // --- BASE DE DATOS DE PRODUCTOS ---
+        const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1608248597481-496100c8c836?auto=format&fit=crop&w=400&q=80";
+
         const products = [
-            { id: 1, name: "Péptido BPC-157 Premium", category: "peptidos", price: 89.00, desc: "Regeneración celular avanzada y recuperación tisular veloz.", img: "🧪" },
-            { id: 2, name: "CJC-1295 + DAC Ampollas", category: "peptidos", price: 120.00, desc: "Estimulación de hormona de crecimiento antienvejecimiento.", img: "🧬" },
-            { id: 3, name: "Oud Impérial Extrait", category: "perfumes", price: 145.00, desc: "Alta perfumería. Notas profundas de madera oud, resinas y ámbar.", img: "✨" },
-            { id: 4, name: "Éclat de Verveine", category: "perfumes", price: 115.00, desc: "Frescura botánica con destellos cítricos de verbena y jazmín.", img: "🌿" },
-            { id: 5, name: "Tirzepatida Protocolo 5mg", category: "tirzepatida", price: 210.00, desc: "Optimización metabólica de última generación y control de saciedad.", img: "🔬" },
-            { id: 6, name: "Tirzepatida Advance 10mg", category: "tirzepatida", price: 340.00, desc: "Máxima pureza molecular para tratamientos metabólicos prolongados.", img: "💉" },
-            { id: 7, name: "Magnesio L-Treonato Celular", category: "suplementos", price: 42.00, desc: "Biodisponibilidad cerebral absoluta. Mejora cognitiva y descanso.", img: "💊" },
-            { id: 8, name: "Omega 3 Ultra Puro (Nivel Clínico)", category: "suplementos", price: 55.00, desc: "Alta concentración de EPA/DHA destilado molecularmente.", img: "🐟" }
+            { id: 1, name: "Péptido BPC-157 Premium", category: "peptidos", price: 89.00, desc: "Regeneración celular avanzada y recuperación tisular veloz.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 2, name: "CJC-1295 + DAC Ampollas", category: "peptidos", price: 120.00, desc: "Estimulación de hormona de crecimiento antienvejecimiento.", img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80" },
+            { id: 3, name: "Oud Impérial Extrait", category: "perfumes", price: 145.00, desc: "Alta perfumería. Notas profundas de madera oud, resinas y ámbar.", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=400&q=80" },
+            { id: 4, name: "Éclat de Verveine", category: "perfumes", price: 115.00, desc: "Frescura botánica con destellos cítricos de verbena y jazmín.", img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80" },
+            { id: 5, name: "T.G. de 15mg", category: "tirzepatida", price: 1500.00, desc: "T.G. en la presentación de 15mg", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-15.png" },
+            { id: 6, name: "T.G. 10mg", category: "tirzepatida", price: 1400.00, desc: "T.G. en la presentación de 10mg", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-10.png" },
+            { id: 7, name: "Magnesio L-Treonato Celular", category: "suplementos", price: 42.00, desc: "Biodisponibilidad cerebral absoluta. Mejora cognitiva y descanso.", img: "https://images.unsplash.com/photo-1616671211537-7a577f7c0e60?auto=format&fit=crop&w=400&q=80" },
+            { id: 8, name: "Omega 3 Ultra Puro (Nivel Clínico)", category: "suplementos", price: 55.00, desc: "Alta concentración de EPA/DHA destilado molecularmente.", img: "https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=400&q=80" },
+            { id: 9, name: "T.G. de 5mg ", category: "tirzepatida", price: 1100.00, desc: "T.G. en la presentación de 5mg", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-5.png" },
+            { id: 10, name: "T.G. de 12.5mg ", category: "tirzepatida", price: 1300.00, desc: "T.G. en la presentación de 12.5mg", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-125.png" },
+            { id: 11, name: "T.G. de 7.5mg ", category: "tirzepatida", price: 1200.00, desc: "T.G. en la presentación de 7.5mg", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-75.png" },
+            { id: 12, name: "Lipoless 15MG multidósis ", category: "tirzepatida", price: 1600.00, desc: "Lipoless en la presentación de 15MG multidósis",  img: "Natural-/PENEGES/imagen_2026-06-01_142618975.png"  },
+            { id: 13, name: "Lipoless 15MG 4 ampollas ", category: "tirzepatida", price: 1500.00, desc: "Lipoless en la presentación de 15MG de 4 ampollas", img: "https://eticos.com.py/wp-content/uploads/2025/07/LIPOLESS-VIALES-15.png" },
+            { id: 14, name: "Lipoless 15MG multidósis ", category: "tirzepatida", price: 1600.00, desc: "Lipoless en la presentación de 15MG multidósis", img: "https://farma.fit/wp-content/uploads/2026/05/Lipoless-15mg-Baby.png" },
+         
         ];
 
         let cart = [];
 
-        // --- ANIMACIÓN DE ENTRADA ---
         window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 const intro = document.getElementById('intro-screen');
                 intro.style.opacity = '0';
                 intro.style.visibility = 'hidden';
                 document.body.classList.remove('overflow-hidden');
-            }, 2800); // Duración exacta de la animación visual
+            }, 2800);
         });
 
-        // --- RENDERIZAR PRODUCTOS ---
         function renderProducts(categoryFilter = 'all') {
             const grid = document.getElementById('products-grid');
             grid.innerHTML = '';
@@ -243,10 +253,14 @@
             filtered.forEach(product => {
                 const card = document.createElement('div');
                 card.className = "bg-white border border-stone-100 rounded p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group";
+                
                 card.innerHTML = `
                     <div>
-                        <div class="h-44 w-full bg-stone-50 rounded flex items-center justify-center text-5xl mb-6 group-hover:scale-105 transition-transform duration-300">
-                            ${product.img}
+                        <div class="h-52 w-full bg-stone-50 rounded flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 overflow-hidden">
+                            <img src="${product.img}" 
+                                 alt="${product.name}" 
+                                 class="h-full w-full object-contain p-4"
+                                 onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
                         </div>
                         <span class="text-[10px] uppercase font-bold tracking-widest text-amber-600 mb-1 block">${product.category}</span>
                         <h4 class="font-serif text-lg font-semibold text-emerald-950 mb-2">${product.name}</h4>
@@ -254,7 +268,7 @@
                     </div>
                     <div>
                         <div class="flex items-center justify-between pt-4 border-t border-stone-50">
-                            <span class="font-serif text-lg font-bold text-stone-900">$${product.price.toFixed(2)}</span>
+                            <span class="font-serif text-lg font-bold text-stone-900">Bs. ${product.price.toFixed(2)}</span>
                             <button onclick="addToCart(${product.id})" class="bg-stone-50 hover:bg-emerald-950 text-emerald-950 hover:text-white transition-colors duration-300 px-3 py-2 rounded text-xs uppercase font-medium tracking-wider">
                                 Agregar +
                             </button>
@@ -265,11 +279,9 @@
             });
         }
 
-        // --- FILTRAR CATEGORÍAS (MENÚS EXTENDIBLES) ---
         function filterCategory(cat) {
             renderProducts(cat);
             
-            // Actualizar estados visuales de los botones contenedores
             document.querySelectorAll('.cat-btn').forEach(btn => {
                 btn.classList.remove('bg-emerald-950', 'text-white');
                 btn.classList.add('text-stone-600', 'hover:bg-stone-100');
@@ -282,13 +294,11 @@
             }
         }
 
-        // --- MENÚ MÓVIL ---
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         }
 
-        // --- SISTEMA INTERACTIVO DE CARRITO ---
         function toggleCart(open) {
             const sidebar = document.getElementById('cart-sidebar');
             const backdrop = document.getElementById('cart-backdrop');
@@ -300,7 +310,6 @@
                 backdrop.classList.add('opacity-100');
                 panel.classList.remove('translate-x-full');
             } else {
-                sidebar.addPointerEvents = 'none';
                 backdrop.classList.add('opacity-0', 'pointer-events-none');
                 backdrop.classList.remove('opacity-100');
                 panel.classList.add('translate-x-full');
@@ -319,7 +328,7 @@
             }
 
             updateCartUI();
-            toggleCart(true); // Abrir carrito automáticamente para feedback elegante
+            toggleCart(true);
         }
 
         function changeQuantity(id, amount) {
@@ -338,7 +347,6 @@
             const badge = document.getElementById('cart-badge');
             const totalEl = document.getElementById('cart-total');
 
-            // Contador insignia del Carrito
             const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
             if (totalItems > 0) {
                 badge.innerText = totalItems;
@@ -347,10 +355,9 @@
                 badge.classList.add('opacity-0');
             }
 
-            // Renderizar los elementos dentro del panel lateral
             if (cart.length === 0) {
                 container.innerHTML = `<p class="text-stone-400 text-center py-8 font-light text-sm">El carrito está vacío.</p>`;
-                totalEl.innerText = "$0.00";
+                totalEl.innerText = "Bs. 0.00";
                 return;
             }
 
@@ -359,14 +366,18 @@
 
             cart.forEach(item => {
                 subtotal += item.price * item.quantity;
+                
                 const div = document.createElement('div');
                 div.className = "flex items-center justify-between border-b border-stone-100 pb-4";
+                
                 div.innerHTML = `
                     <div class="flex items-center gap-3">
-                        <div class="bg-stone-100 p-2 rounded text-xl">${item.img}</div>
+                        <div class="bg-stone-50 w-12 h-12 rounded flex items-center justify-center overflow-hidden border border-stone-100 p-1">
+                            <img src="${item.img}" alt="${item.name}" class="h-full w-full object-contain" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
+                        </div>
                         <div>
                             <h5 class="text-xs font-semibold text-emerald-950">${item.name}</h5>
-                            <p class="text-xs text-stone-400 font-light">$${item.price.toFixed(2)} c/u</p>
+                            <p class="text-xs text-stone-400 font-light">Bs. ${item.price.toFixed(2)} c/u</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-3">
@@ -375,13 +386,13 @@
                             <span class="px-3 text-xs font-medium">${item.quantity}</span>
                             <button onclick="changeQuantity(${item.id}, 1)" class="px-2 py-0.5 bg-stone-50 hover:bg-stone-100 text-xs">+</button>
                         </div>
-                        <span class="text-xs font-serif font-bold text-stone-800 w-16 text-right">$${(item.price * item.quantity).toFixed(2)}</span>
+                        <span class="text-xs font-serif font-bold text-stone-800 w-16 text-right">Bs. ${(item.price * item.quantity).toFixed(2)}</span>
                     </div>
                 `;
                 container.appendChild(div);
             });
 
-            totalEl.innerText = `$${subtotal.toFixed(2)}`;
+            totalEl.innerText = `Bs. ${subtotal.toFixed(2)}`;
         }
 
         function checkout() {
@@ -389,14 +400,10 @@
                 alert("Tu carrito está vacío. Agrega una selección para continuar.");
                 return;
             }
-            alert("✨ ¡Simulación de Compra Exitosa! ✨\n\nGracias por confiar en Natural+. Un asesor premium se encargará de gestionar tu orden de inmediato.");
-            cart = [];
-            updateCartUI();
-            toggleCart(false);
+            alert("Procediendo al pago seguro...");
         }
 
-        // Inicializar renderizado de productos al cargar
-        renderProducts();
+        renderProducts('all');
     </script>
 </body>
 </html>
