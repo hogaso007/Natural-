@@ -55,7 +55,7 @@
                     <span class="font-serif text-2xl md:text-3xl tracking-wider font-semibold text-emerald-950">NATURAL<span class="text-amber-500">+</span></span>
                 </div>
 
-                <div class="hidden md:flex space-x-8 h-full items-center">
+                <div class="hidden md:flex space-x-6 h-full items-center">
                     
                     <div class="relative group h-full flex items-center">
                         <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
@@ -81,21 +81,39 @@
 
                     <div class="relative group h-full flex items-center">
                         <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
+                            Retatrutide <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
+                        </button>
+                        <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
+                            <a href="#productos" onclick="filterCategory('retatrutide')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Línea Avanzada GGG</a>
+                        </div>
+                    </div>
+
+                    <div class="relative group h-full flex items-center">
+                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
                             Perfumes <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
                         </button>
                         <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
                             <a href="#productos" onclick="filterCategory('perfumes')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Extractos de Alta Gama</a>
-                            
                         </div>
                     </div>
+
                     <div class="relative group h-full flex items-center">
-    <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
-        Suplementos <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
-    </button>
-    <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
-        <a href="#productos" onclick="filterCategory('suplementos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Línea Premium</a>
-    </div>
-</div>
+                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
+                            Suplementos <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
+                        </button>
+                        <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
+                            <a href="#productos" onclick="filterCategory('suplementos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Línea Premium</a>
+                        </div>
+                    </div>
+
+                    <div class="relative group h-full flex items-center">
+                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
+                            Anabolizantes <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
+                        </button>
+                        <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
+                            <a href="#productos" onclick="filterCategory('anabolizantes')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Rendimiento Técnico</a>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -119,12 +137,6 @@
                 </div>
             </div>
             <div>
-                <p class="font-semibold text-xs uppercase tracking-wider text-stone-400 mb-1">Perfumes</p>
-                <div class="pl-3 flex flex-col gap-1 text-sm text-stone-600">
-                    <a href="#productos" onclick="filterCategory('perfumes'); toggleMobileMenu()">Todo Perfumes</a>
-                </div>
-            </div>
-            <div>
                 <p class="font-semibold text-xs uppercase tracking-wider text-stone-400 mb-1">Tirzepatida</p>
                 <div class="pl-3 flex flex-col gap-1 text-sm text-stone-600">
                     <a href="#productos" onclick="filterCategory('tirzepatida'); toggleMobileMenu()">T.G.</a>
@@ -135,9 +147,27 @@
                 </div>
             </div>
             <div>
+                <p class="font-semibold text-xs uppercase tracking-wider text-stone-400 mb-1">Retatrutide</p>
+                <div class="pl-3 flex flex-col gap-1 text-sm text-stone-600">
+                    <a href="#productos" onclick="filterCategory('retatrutide'); toggleMobileMenu()">Todo Retatrutide</a>
+                </div>
+            </div>
+            <div>
+                <p class="font-semibold text-xs uppercase tracking-wider text-stone-400 mb-1">Perfumes</p>
+                <div class="pl-3 flex flex-col gap-1 text-sm text-stone-600">
+                    <a href="#productos" onclick="filterCategory('perfumes'); toggleMobileMenu()">Todo Perfumes</a>
+                </div>
+            </div>
+            <div>
                 <p class="font-semibold text-xs uppercase tracking-wider text-stone-400 mb-1">Suplementos</p>
                 <div class="pl-3 flex flex-col gap-1 text-sm text-stone-600">
                     <a href="#productos" onclick="filterCategory('suplementos'); toggleMobileMenu()">Línea Premium</a>
+                </div>
+            </div>
+            <div>
+                <p class="font-semibold text-xs uppercase tracking-wider text-stone-400 mb-1">Anabolizantes</p>
+                <div class="pl-3 flex flex-col gap-1 text-sm text-stone-600">
+                    <a href="#productos" onclick="filterCategory('anabolizantes'); toggleMobileMenu()">Todo Anabolizantes</a>
                 </div>
             </div>
         </div>
@@ -151,7 +181,7 @@
                 La evolución del cuidado <br><span class="italic text-amber-100 font-normal">biotecnológico y aromático</span>.
             </h2>
             <p class="text-stone-300 font-light max-w-2xl mx-auto text-sm md:text-base leading-relaxed mb-8">
-                En Natural+ fusionamos la pureza de la naturaleza con los avances de la ciencia molecular moderna para ofrecer solutions de longevidad, nutrición avanzada y alta perfumería.
+                En Natural+ fusionamos la pureza de la naturaleza con los avances de la ciencia molecular moderna para ofrecer soluciones de longevidad, nutrición avanzada y alta perfumería.
             </p>
             <a href="#productos" class="inline-block bg-amber-500 hover:bg-amber-600 text-stone-950 font-medium text-xs uppercase tracking-widest px-8 py-4 transition-all rounded shadow-lg">
                 Explorar Colecciones
@@ -164,9 +194,11 @@
         <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 border-b border-stone-200 pb-6">
             <button onclick="filterCategory('all')" id="btn-all" class="cat-btn active text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all bg-emerald-950 text-white">Todos</button>
             <button onclick="filterCategory('peptidos')" id="btn-peptidos" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Péptidos</button>
-            <button onclick="filterCategory('perfumes')" id="btn-perfumes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Perfumes</button>
             <button onclick="filterCategory('tirzepatida')" id="btn-tirzepatida" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Tirzepatida</button>
+            <button onclick="filterCategory('retatrutide')" id="btn-retatrutide" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Retatrutide</button>
+            <button onclick="filterCategory('perfumes')" id="btn-perfumes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Perfumes</button>
             <button onclick="filterCategory('suplementos')" id="btn-suplementos" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Suplementos</button>
+            <button onclick="filterCategory('anabolizantes')" id="btn-anabolizantes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Anabolizantes</button>
         </div>
 
         <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -214,28 +246,76 @@
         const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1608248597481-496100c8c836?auto=format&fit=crop&w=400&q=80";
 
         const products = [
-            { id: 1, name: "Péptido BPC-157 Premium", category: "peptidos", price: 89.00, desc: "Regeneración celular avanzada y recuperación tisular veloz.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
-            { id: 2, name: "CJC-1295 + DAC Ampollas", category: "peptidos", price: 120.00, desc: "Estimulación de hormona de crecimiento antienvejecimiento.", img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80" },
-            { id: 3, name: "Oud Impérial Extrait", category: "perfumes", price: 145.00, desc: "Alta perfumería. Notas profundas de madera oud, resinas y ámbar.", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=400&q=80" },
-            { id: 4, name: "Éclat de Verveine", category: "perfumes", price: 115.00, desc: "Frescura botánica con destellos cítricos de verbena y jazmín.", img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80" },
-            { id: 5, name: "T.G. de 15mg", category: "tirzepatida", price: 1500.00, desc: "T.G. en la presentación de 15mg", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-15.png" },
-            { id: 6, name: "T.G. 10mg", category: "tirzepatida", price: 1400.00, desc: "T.G. en la presentación de 10mg", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-10.png" },
-            { id: 7, name: "Magnesio L-Treonato Celular", category: "suplementos", price: 42.00, desc: "Biodisponibilidad cerebral absoluta. Mejora cognitiva y descanso.", img: "https://images.unsplash.com/photo-1616671211537-7a577f7c0e60?auto=format&fit=crop&w=400&q=80" },
-            { id: 8, name: "Omega 3 Ultra Puro (Nivel Clínico)", category: "suplementos", price: 55.00, desc: "Alta concentración de EPA/DHA destilado molecularmente.", img: "https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=400&q=80" },
-            { id: 9, name: "T.G. de 5mg ", category: "tirzepatida", price: 1100.00, desc: "T.G. en la presentación de 5mg", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-5.png" },
-            { id: 10, name: "T.G. de 12.5mg ", category: "tirzepatida", price: 1300.00, desc: "T.G. en la presentación de 12.5mg", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-125.png" },
-            { id: 11, name: "T.G. de 7.5mg ", category: "tirzepatida", price: 1200.00, desc: "T.G. en la presentación de 7.5mg", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-75.png" },
-            { id: 12, name: "Lipoless 15MG multidósis ", category: "tirzepatida", price: 1600.00, desc: "Lipoless en la presentación de 15MG multidósis",  img: "https://eticos.com.py/wp-content/uploads/2025/10/Lipoless-MD-15-1.jpg"  },
-            { id: 13, name: "Lipoless 15MG 4 ampollas ", category: "tirzepatida", price: 1500.00, desc: "Lipoless en la presentación de 15MG de 4 ampollas", img: "https://eticos.com.py/wp-content/uploads/2025/07/LIPOLESS-VIALES-15.png" },
-            { id: 14, name: "Lipoless 10MG multidósis ", category: "tirzepatida", price: 1400.00, desc: "Lipoless en la presentación de 10MG multidósis", img: "https://eticos.com.py/wp-content/uploads/2025/10/Lipoless-MD-10-1.jpg" },
-            { id: 15, name: "Lipoless 7.5MG multidósis ", category: "tirzepatida", price: 1200.00, desc: "Lipoless en la presentación de 7.5MG multidósis", img: "https://eticos.com.py/wp-content/uploads/2025/07/LIPOLESS-VIALES-75.png" },
-            { id: 16, name: "Lipoless 5MG multidósis ", category: "tirzepatida", price: 1100.00, desc: "Lipoless en la presentación de 5MG multidósis", img: "https://eticos.com.py/wp-content/uploads/2025/10/Lipoless-MD-5-1.jpg" },
-            { id: 17, name: "Tirzec 15MG caneta", category: "tirzepatida", price: 2000.00, desc: "Tirzec 15mg en caneta", img: "https://bucket-prod.us-ord-10.linodeobjects.com/site/media/fotos/produtos/thumbs/big/5e0d52b4fdaaf2b6869c22a75ed6520b0b2ce36f.webp" },
-            { id: 18, name: "Tirzec 15MG multidósis", category: "tirzepatida", price: 1500.00, desc: "Tirzec en la presentación de 15MG multidósis", img: "https://ononxkbhfufuxpipqhxd.supabase.co/storage/v1/object/public/admin-uploads/products/1780149284506-yhrdq9mguh.webp" },
-            { id: 19, name: "Lipoland 15MG", category: "tirzepatida", price: 1700.00, desc: "Lipoless en la presentación de 15MG", img: "https://http2.mlstatic.com/D_NQ_NP_806016-MLC107540281744_032026-O.webp" },
-            { id: 20, name: "Tirzedral 15MG", category: "tirzepatida", price: 1600.00, desc: "Tirzedral en la presentación de 15MG", img: "https://ononxkbhfufuxpipqhxd.supabase.co/storage/v1/object/public/admin-uploads/products/1773358761325-65lyi19qusd.jpg" },
-            { id: 21, name: "TNL-Retatrutide 40MG", category: "tirzepatida", price: 1600.00, desc: "Tirzedral en la presentación de 15MG", img: "https://ononxkbhfufuxpipqhxd.supabase.co/storage/v1/object/public/admin-uploads/products/1773358761325-65lyi19qusd.jpg" },
-      
+            // --- SECCIÓN: TIRZEPATIDA ---
+            { id: 1, name: "T.G. 15MG", category: "tirzepatida", price: 1500.00, desc: "Tirzepatide en presentación de 15mg.", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-15.png" },
+            { id: 2, name: "T.G. 12.5MG", category: "tirzepatida", price: 1300.00, desc: "Tirzepatide en presentación de 12.5mg.", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-125.png" },
+            { id: 3, name: "T.G. 10MG", category: "tirzepatida", price: 1400.00, desc: "Tirzepatide en presentación de 10mg.", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-10.png" },
+            { id: 4, name: "T.G. 7.5MG", category: "tirzepatida", price: 1200.00, desc: "Tirzepatide en presentación de 7.5mg.", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-75.png" },
+            { id: 5, name: "T.G. 5MG", category: "tirzepatida", price: 1100.00, desc: "Tirzepatide en presentación de 5mg.", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-5.png" },
+            { id: 6, name: "LIPOLESS 15MG 4 AMP", category: "tirzepatida", price: 1500.00, desc: "Lipoless en presentación de 15mg (4 ampollas).", img: "https://eticos.com.py/wp-content/uploads/2025/07/LIPOLESS-VIALES-15.png" },
+            { id: 7, name: "LIPOLESS 15MG 4 Multidosis", category: "tirzepatida", price: 1600.00, desc: "Lipoless en presentación de 15mg multidosis.", img: "https://eticos.com.py/wp-content/uploads/2025/10/Lipoless-MD-15-1.jpg" },
+            { id: 8, name: "LIPOLESS 10MG", category: "tirzepatida", price: 1400.00, desc: "Lipoless en presentación de 10mg.", img: "https://eticos.com.py/wp-content/uploads/2025/10/Lipoless-MD-10-1.jpg" },
+            { id: 9, name: "LIPOLESS 7.5MG", category: "tirzepatida", price: 1200.00, desc: "Lipoless en presentación de 7.5mg.", img: "https://eticos.com.py/wp-content/uploads/2025/07/LIPOLESS-VIALES-75.png" },
+            { id: 10, name: "LIPOLESS 5MG", category: "tirzepatida", price: 1100.00, desc: "Lipoless en presentación de 5mg.", img: "https://eticos.com.py/wp-content/uploads/2025/10/Lipoless-MD-5-1.jpg" },
+            { id: 11, name: "TIRZEC 15MG CANETA", category: "tirzepatida", price: 2000.00, desc: "Tirzec 15mg en aplicador tipo caneta.", img: "https://bucket-prod.us-ord-10.linodeobjects.com/site/media/fotos/produtos/thumbs/big/5e0d52b4fdaaf2b6869c22a75ed6520b0b2ce36f.webp" },
+            { id: 12, name: "TIRZEC 15MG Multidosis", category: "tirzepatida", price: 1500.00, desc: "Tirzec en presentación de 15mg multidosis.", img: "https://ononxkbhfufuxpipqhxd.supabase.co/storage/v1/object/public/admin-uploads/products/1774898282674-8jgesc4wi5b.jpg" },
+            { id: 13, name: "TIRZEC 15MG 4 ampollas", category: "tirzepatida", price: 1400.00, desc: "Tirzec en presentación de 15mg (4 ampollas).", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXnpWZm6LXBCSthDGrS0vzipSluLHNPHzlSg&s" },
+            { id: 14, name: "LIPOLAND- 15MG", category: "tirzepatida", price: 1700.00, desc: "Lipoland en presentación avanzada de 15mg.", img: "https://http2.mlstatic.com/D_NQ_NP_806016-MLC107540281744_032026-O.webp" },
+            { id: 15, name: "TIRZEDRAL 15MG", category: "tirzepatida", price: 1600.00, desc: "Tirzedral en presentación de 15mg.", img: "https://ononxkbhfufuxpipqhxd.supabase.co/storage/v1/object/public/admin-uploads/products/1773358761325-65lyi19qusd.jpg" },
+
+            // --- SECCIÓN: RETATRUTIDE ---
+            { id: 16, name: "TNL- RETATRUTIDE 40MG", category: "retatrutide", price: 2400.00, desc: "Retatrutide avanzado para optimización metabólica integral.", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663029581289/5DdYFHJLZQUemYaFCcWCBy/retatrutide-40mg-pen_8543f2d2.webp" },
+            { id: 17, name: "RETATRUTIDE - 40 MG - OXYGEN 4 AMPOLAS", category: "retatrutide", price: 2000.00, desc: "Retatrutide de la línea Oxigen (4 ampollas).", img: "https://5.imimg.com/data5/SELLER/Default/2025/12/571938804/RW/VV/QR/25098227/retatrutide-40mg-rt40.jpg" },
+            { id: 18, name: "RETATRUTIDE - 40 MG - OXYGEN - Lapicero", category: "retatrutide", price: 2300.00, desc: "Presentación Oxigen en formato lapicero/caneta.", img: "https://probook.s3.sa-east-1.amazonaws.com/products/6d6d4cb5-7562-43ad-b1d3-f485a39c727c.webp" },
+            { id: 19, name: "RETATRUTIDE - 40 MG - SINEDICA - Lapicero", category: "retatrutide", price: 2400.00, desc: "Presentación Sinedica en formato lapicero/caneta.", img: "https://5.imimg.com/data5/SELLER/Default/2026/5/605456056/BN/YO/LW/205140793/oxcarbazepine-300mg-tablets.jpeg" },
+            { id: 20, name: "RETATRUTIDE - 40 MG - ALUVI - Lapicero", category: "retatrutide", price: 2400.00, desc: "Presentación Aluvi en formato lapicero/caneta.", img: "https://retatrutidestore.co/image/cache/catalog/Reta/Alluvi-Retatrutide-40mg-Pen-800x800.jpeg" },
+            { id: 21, name: "RETATRUTIDE - 60 MG ZEPTRA", category: "retatrutide", price: 3000.00, desc: "Fórmula de alta concentración de la línea Zeptra.", img: "https://5.imimg.com/data5/SELLER/Default/2025/12/571943011/CJ/LQ/DO/25098227/retatrutide-60mg-rt60-500x500.jpg" },
+            { id: 22, name: "RETATRUTIDE - 120MG- ZPHC KIT", category: "retatrutide", price: 7500.00, desc: "Kit premium de máxima concentración por laboratorios ZPHC.", img: "https://atacadoparaguai.com/wp-content/uploads/2026/04/PERFUMES-ARABES.jpeg" },
+            { id: 23, name: "RETATRUTIDE - 40MG- ZPHC KIT", category: "retatrutide", price: 3000.00, desc: "Kit clínico de Retatrutide por laboratorios ZPHC.", img: "https://peptidoslife.com/wp-content/uploads/2025/12/Retatrutide-Marca-zphc-PEPTIDOS-LIFE.jpg" },
+            { id: 24, name: "RETATRUTIDE - 15MG- ZPHC", category: "retatrutide", price: 1800.00, desc: "Presentación estándar de Retatrutide por ZPHC.", img: "https://zahrafarmaceutica.com.py/cdn/shop/files/PHOTO-2026-01-22-00-46-54_4183d24a-eab3-49f9-bf48-df6888a829c2_1200x.jpg?v=1769054102" },
+
+            // --- SECCIÓN: PÉPTIDOS ---
+            { id: 25, name: "BPC-157 + TB500 ALUVI LAPICERO", category: "peptidos", price: 3500.00, desc: "Fórmula combinada Recovery & Regeneración en lapicero.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 26, name: "BPC 157", category: "peptidos", price: 1700.00, desc: "Péptido puro de alta eficacia regenerativa tisular.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 27, name: "TB500", category: "peptidos", price: 1750.00, desc: "Péptido enfocado en la reparación muscular y cicatrización.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 28, name: "GHK-CU - 100MG", category: "peptidos", price: 1600.00, desc: "Péptido de cobre para rejuvenecimiento de la matriz celular.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 29, name: "GHK-CU - 50MG ZPHC KIT", category: "peptidos", price: 3500.00, desc: "Kit ZPHC completo de péptido de cobre.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 30, name: "HGH FRAG 176-191 AA ZPHC KIT", category: "peptidos", price: 2600.00, desc: "Fragmento para lipólisis y apoyo metabólico por ZPHC.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 31, name: "HGH-SOMATROPIN - COOPER", category: "peptidos", price: 3800.00, desc: "Hormona de crecimiento somatropina original de Cooper.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 32, name: "TESAMORELIN 5MG", category: "peptidos", price: 1800.00, desc: "Estímulo de hormona de crecimiento enfocado en reducción de adiposidad.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 33, name: "CJC-1295 5MG", category: "peptidos", price: 1400.00, desc: "Estimulación y liberación antienvejecimiento celular.", img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80" },
+            { id: 34, name: "IPAMORELIN - 5 MG ZEPTRA", category: "peptidos", price: 1400.00, desc: "Péptido liberador selectivo de hormona de crecimiento.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 35, name: "IPAMORELIN - 25MG ZPHC - KIT", category: "peptidos", price: 3000.00, desc: "Kit molecular avanzado Ipamorelin de ZPHC.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 36, name: "NAD+ ZPHC 2500 mg", category: "peptidos", price: 3500.00, desc: "Coenzima vital para la extensión de la longevidad celular.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 37, name: "ICF-LR3 ZPHC", category: "peptidos", price: 3500.00, desc: "Soporte anabólico celular de última generación.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 38, name: "MOTS-C", category: "peptidos", price: 1700.00, desc: "Péptido de origen mitocondrial regulador del rendimiento.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 39, name: "SS31", category: "peptidos", price: 1700.00, desc: "Protector mitocondrial contra el estrés oxidativo celular.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 40, name: "PT-141", category: "peptidos", price: 1600.00, desc: "Péptido regulador de la vitalidad y el bienestar general.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 41, name: "KPV XL PEPTIDES", category: "peptidos", price: 1600.00, desc: "Potente inmunomodulador y antiinflamatorio peptídico.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 42, name: "AOD", category: "peptidos", price: 1700.00, desc: "Optimizador metabólico enfocado en la destrucción lipídica.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 43, name: "ADIPOTIDE FTTP", category: "peptidos", price: 1500.00, desc: "Péptido experimental enfocado en el tejido adiposo.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 44, name: "SELANK", category: "peptidos", price: 1600.00, desc: "Soporte nootrópico, ansiolítico y regulador neuropsíquico.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 45, name: "SEMAX", category: "peptidos", price: 1600.00, desc: "Nootrópico avanzado para claridad mental y neuroprotección.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 46, name: "Glow Pro Mix - 60MG ZPHC", category: "peptidos", price: 3000.00, desc: "Mezcla de la línea Glow Series para rejuvenecimiento estético.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 47, name: "GLOW 70 MG CANETA - OXIGEN", category: "peptidos", price: 3000.00, desc: "Fórmula estética avanzada en formato caneta aplicadora.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 48, name: "GLOW-70-MG", category: "peptidos", price: 2200.00, desc: "Fórmula rejuvenecedora Glow Series en viales.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 49, name: "SLUPP-332 -60 CAPSULAS", category: "peptidos", price: 1300.00, desc: "Suplemento molecular avanzado en cápsulas.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 50, name: "KLOW -80MG", category: "peptidos", price: 2400.00, desc: "Compuesto avanzado de alta concentración celular.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 51, name: "ZPTROPAQ 30MG -ZPHC", category: "peptidos", price: 5000.00, desc: "Línea premium de alta gama para optimización celular.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+            { id: 52, name: "HP-HCG 5000UI - ZPHC", category: "peptidos", price: 5000.00, desc: "Gonadotropina coriónica humana purificada de grado clínico.", img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=400&q=80" },
+
+            // --- SECCIÓN: PERFUMES ---
+            { id: 53, name: "Oud Impérial Extrait", category: "perfumes", price: 145.00, desc: "Alta perfumería. Notas profundas de madera oud, resinas y ámbar.", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=400&q=80" },
+            { id: 54, name: "Éclat de Verveine", category: "perfumes", price: 115.00, desc: "Frescura botánica con destellos cítricos de verbena y jazmín.", img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80" },
+            { id: 58, name: "9pm clásico", category: "perfumes", price: 530.00, desc: "Fragancia oriental premium. Notas intensas, seductoras y magnéticas de larga duración.", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=400&q=80" },
+            { id: 59, name: "9pm red", category: "perfumes", price: 480.00, desc: "Edición especial con acordes vibrantes, audaces y especiados de carácter único.", img: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=400&q=80" },
+            { id: 60, name: "Hawas malibu", category: "perfumes", price: 480.00, desc: "Esencia acuática y fresca inspirada en la costa, perfecta para destacar con sofisticación.", img: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=400&q=80" },
+            { id: 61, name: "Tropical", category: "perfumes", price: 480.00, desc: "Fusión frutal y exótica de alta concentración que evoca frescura y elegancia veraniega.", img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80" },
+
+            // --- OTRAS CATEGORÍAS ---
+            { id: 55, name: "Magnesio L-Treonato Celular", category: "suplementos", price: 42.00, desc: "Biodisponibilidad cerebral absoluta. Mejora cognitiva y descanso.", img: "https://images.unsplash.com/photo-1616671211537-7a577f7c0e60?auto=format&fit=crop&w=400&q=80" },
+            { id: 56, name: "Omega 3 Ultra Puro (Nivel Clínico)", category: "suplementos", price: 55.00, desc: "Alta concentración de EPA/DHA destilado molecularmente.", img: "https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=400&q=80" },
+            { id: 57, name: "Oxandrolone Ultra Pure 10mg", category: "anabolizantes", price: 180.00, desc: "Definición muscular limpia y optimización de fuerza metabólica.", img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80" }
         ];
 
         let cart = [];
