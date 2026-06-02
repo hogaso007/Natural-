@@ -190,20 +190,22 @@
     </header>
 
     <main id="productos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        
-        <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 border-b border-stone-200 pb-6">
-            <button onclick="filterCategory('all')" id="btn-all" class="cat-btn active text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all bg-emerald-950 text-white">Todos</button>
-            <button onclick="filterCategory('peptidos')" id="btn-peptidos" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Péptidos</button>
-            <button onclick="filterCategory('tirzepatida')" id="btn-tirzepatida" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Tirzepatida</button>
-            <button onclick="filterCategory('retatrutide')" id="btn-retatrutide" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Retatrutide</button>
-            <button onclick="filterCategory('perfumes')" id="btn-perfumes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Perfumes</button>
-            <button onclick="filterCategory('suplementos')" id="btn-suplementos" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Suplementos</button>
-            <button onclick="filterCategory('anabolizantes')" id="btn-anabolizantes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Anabolizantes</button>
-        </div>
+    
+    <!-- MENÚ DE CATEGORÍAS (Corregido: Se reemplazó Suplementos por Belleza) -->
+    <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 border-b border-stone-200 pb-6">
+        <button onclick="filterCategory('all')" id="btn-all" class="cat-btn active text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all bg-emerald-950 text-white">Todos</button>
+        <button onclick="filterCategory('peptidos')" id="btn-peptidos" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Péptidos</button>
+        <button onclick="filterCategory('tirzepatida')" id="btn-tirzepatida" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Tirzepatida</button>
+        <button onclick="filterCategory('retatrutide')" id="btn-retatrutide" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Retatrutide</button>
+        <button onclick="filterCategory('perfumes')" id="btn-perfumes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Perfumes</button>
+        <button onclick="filterCategory('belleza')" id="btn-belleza" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Belleza / Skincare</button>
+        <button onclick="filterCategory('anabolizantes')" id="btn-anabolizantes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Anabolizantes</button>
+    </div>
 
-        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        </div>
-    </main>
+    <!-- GRID DE PRODUCTOS -->
+    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    </div>
+</main>
 
     <div id="cart-sidebar" class="fixed inset-0 z-50 overflow-hidden pointer-events-none">
         <div id="cart-backdrop" onclick="toggleCart(false)" class="absolute inset-0 bg-stone-900/40 backdrop-blur-sm opacity-0 transition-opacity duration-500 ease-in-out pointer-events-none"></div>
@@ -305,18 +307,268 @@
             { id: 52, name: "HP-HCG 5000UI - ZPHC", category: "peptidos", price: 5000.00, desc: "Gonadotropina coriónica humana purificada de grado clínico.", img: "https://www.ecbt.org/wp-content/uploads/2025/12/hp-hcg.jpg" },
 
             // --- SECCIÓN: PERFUMES ---
-            { id: 53, name: "Oud Impérial Extrait", category: "perfumes", price: 145.00, desc: "Alta perfumería. Notas profundas de madera oud, resinas y ámbar.", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=400&q=80" },
-            { id: 54, name: "Éclat de Verveine", category: "perfumes", price: 115.00, desc: "Frescura botánica con destellos cítricos de verbena y jazmín.", img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80" },
-            { id: 58, name: "9pm clásico", category: "perfumes", price: 530.00, desc: "Fragancia oriental premium. Notas intensas, seductoras y magnéticas de larga duración.", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=400&q=80" },
-            { id: 59, name: "9pm red", category: "perfumes", price: 480.00, desc: "Edición especial con acordes vibrantes, audaces y especiados de carácter único.", img: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=400&q=80" },
-            { id: 60, name: "Hawas malibu", category: "perfumes", price: 480.00, desc: "Esencia acuática y fresca inspirada en la costa, perfecta para destacar con sofisticación.", img: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=400&q=80" },
-            { id: 61, name: "Tropical", category: "perfumes", price: 480.00, desc: "Fusión frutal y exótica de alta concentración que evoca frescura y elegancia veraniega.", img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=400&q=80" },
+            { 
+        id: 53, 
+        name: "Oud Impérial Extrait", 
+        category: "perfumes", 
+        price: 145.00, 
+        desc: "Alta perfumería. Notas profundas de madera oud, resinas y ámbar.", 
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR62nPtELfrypb1RX5-soh214u97fbewcJNbQ&s" 
+    },
+    { 
+        id: 54, 
+        name: "Éclat de Verveine", 
+        category: "perfumes", 
+        price: 115.00, 
+        desc: "Frescura botánica con destellos cítricos de verbena y jazmín.", 
+        img: "https://www.plantesetparfums.com/cdn/shop/files/EDT_1_87bf1260-84e8-46a5-b8fe-456edcaf55ea.png?v=1714744682&width=1500" 
+    },
+    { 
+        id: 55, 
+        name: "9 PM Clásico - Afnan (150 ml)", 
+        category: "perfumes", 
+        price: 530.00, 
+        desc: "Fragancia oriental premium. Notas intensas, seductoras y magnéticas de larga duración.", 
+        img: "https://m.media-amazon.com/images/I/71trrip1-WL.jpg" 
+    },
+    { 
+        id: 56, 
+        name: "9pm red", 
+        category: "perfumes", 
+        price: 480.00, 
+        desc: "Edición especial con acordes vibrantes, audaces y especiados de carácter único.", 
+        img: "https://us.afnan.com/cdn/shop/files/Untitled_design_52.png?v=1775219148&width=1080" 
+    },
+    { 
+        id: 57, 
+        name: "Hawas Malibu (100 ml)", 
+        category: "perfumes", 
+        price: 480.00, 
+        desc: "Esencia acuática y fresca inspirada en la costa, perfecta para destacar con sofisticación.", 
+        img: "https://http2.mlstatic.com/D_NQ_NP_950771-MLA106903796458_022026-O.webp" 
+    },
+    { 
+        id: 58, 
+        name: "Hawas Tropical (100 ml)", 
+        category: "perfumes", 
+        price: 480.00, 
+        desc: "Fusión frutal y exótica de alta concentración que evoca frescura y elegancia veraniega.", 
+        img: "https://wonder.com.bo/wp-content/uploads/2026/05/tropical-4-247x247.jpg" 
+    },
+    {
+        id: 59,
+        name: "Karma - Lush (Eau de Parfum, 100 ml)",
+        category: "perfumes",
+        price: 0.00,
+        desc: "Fragancia icónica con capas intensas de pachulí, naranja dulce y pino.",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLG9RIQBLaN2XyORfIqpYFX4wiZsJ8tEKckg&s"
+    },
+    {
+        id: 60,
+        name: "No. IV Jus D’Amour - Ramon Blazar (Eau de Parfum, 100 ml)",
+        category: "perfumes",
+        price: 0.00,
+        desc: "Esencia exclusiva de alta costura con notas románticas y cautivadoras.",
+        img: "images/jus-damour.jpg"
+    },
+    {
+        id: 61,
+        name: "9 PM Rebel - Afnan (100 ml)",
+        category: "perfumes",
+        price: 0.00,
+        desc: "Versión audaz y enérgica para romper esquemas con estela prolongada.",
+        img: "images/9pm-rebel.jpg"
+    },
+    {
+        id: 62,
+        name: "Bombe Rose - Rivoli Parfums (100 ml)",
+        category: "perfumes",
+        price: 0.00,
+        desc: "Explosión floral sofisticada diseñada para destacar en ocasiones especiales.",
+        img: "images/bombe-rose.jpg"
+    },
+    {
+        id: 63,
+        name: "Invincible - Rivoli Parfums (100 ml)",
+        category: "perfumes",
+        price: 0.00,
+        desc: "Aroma imponente y masculino que evoca poder, frescura y magnetismo.",
+        img: "images/invincible.jpg"
+    },
+    {
+        id: 64,
+        name: "Faraon (100 ml)",
+        category: "perfumes",
+        price: 0.00,
+        desc: "Notas místicas y amaderadas inspiradas en la realeza del antiguo oriente.",
+        img: "images/faraon.jpg"
+    },
 
-            // --- OTRAS CATEGORÍAS ---
-            { id: 55, name: "Magnesio L-Treonato Celular", category: "suplementos", price: 42.00, desc: "Biodisponibilidad cerebral absoluta. Mejora cognitiva y descanso.", img: "https://images.unsplash.com/photo-1616671211537-7a577f7c0e60?auto=format&fit=crop&w=400&q=80" },
-            { id: 56, name: "Omega 3 Ultra Puro (Nivel Clínico)", category: "suplementos", price: 55.00, desc: "Alta concentración de EPA/DHA destilado molecularmente.", img: "https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=400&q=80" },
-            { id: 57, name: "Oxandrolone Ultra Pure 10mg", category: "anabolizantes", price: 180.00, desc: "Definición muscular limpia y optimización de fuerza metabólica.", img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80" }
-        ];
+    // === CATEGORÍAS ESPECIALES MANTENIDAS (IDs 65) ===
+    { 
+        id: 65, 
+        name: "Oxandrolone Ultra Pure 10mg", 
+        category: "anabolizantes", 
+        price: 180.00, 
+        desc: "Definición muscular limpia y optimización de fuerza metabólica.", 
+        img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80" 
+    },
+
+    // === PRODUCTOS DE BELLEZA / SKINCARE (IDs 66-84) ===
+    {
+        id: 66,
+        name: "Centella Poremizing Clear Toner (Skin1004)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Tónico líquido con sal rosa del Himalaya que limpia impurezas y minimiza poros.",
+        img: "images/poremizing-toner.jpg"
+    },
+    {
+        id: 67,
+        name: "Centella Poremizing Fresh Ampoule (Skin1004)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Sérum concentrado de rápida absorción para el control de sebo y elasticidad del poro.",
+        img: "images/poremizing-ampoule.jpg"
+    },
+    {
+        id: 68,
+        name: "Tea-trica BHA Foam (125 ml)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Espuma limpiadora exfoliante ideal para pieles con tendencia al acné.",
+        img: "images/tea-trica-foam.jpg"
+    },
+    {
+        id: 69,
+        name: "Tea-trica B5 Cream (75 ml)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Crema calmante e hidratante con vitamina B5 para restaurar la barrera cutánea.",
+        img: "images/tea-trica-cream.jpg"
+    },
+    {
+        id: 70,
+        name: "Tea-trica Relief Ampoule (100 ml)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Ampolla de alivio rápido contra rojeces e irritaciones de la piel.",
+        img: "images/tea-trica-ampoule.jpg"
+    },
+    {
+        id: 71,
+        name: "Poremizing Deep Cleansing Foam (125 ml)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Limpiador profundo que remueve residuos de maquillaje y destapa los poros.",
+        img: "images/poremizing-foam.jpg"
+    },
+    {
+        id: 72,
+        name: "Poremizing Light Gel Cream (75 ml)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Crema en gel ultra ligera que refresca e hidrata sin dejar sensación grasosa.",
+        img: "images/poremizing-gel-cream.jpg"
+    },
+    {
+        id: 73,
+        name: "Toner Brightening Capsule Ampoule (100 ml)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Ampolla aclarante con cápsulas activas para unificar el tono de la piel.",
+        img: "images/brightening-ampoule.jpg"
+    },
+    {
+        id: 74,
+        name: "Travel Kit Centella",
+        category: "belleza",
+        price: 0.00,
+        desc: "Set de viaje con los pasos esenciales de la línea Centella Asiática.",
+        img: "images/travel-kit.jpg"
+    },
+    {
+        id: 75,
+        name: "Red Toner (100 ml)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Tónico revitalizante formulado para calmar pieles extremadamente sensibles.",
+        img: "images/red-toner.jpg"
+    },
+    {
+        id: 76,
+        name: "Zero Pore Blackhead Deep Cleansing Oil (Medicube)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Aceite limpiador especializado en disolver puntos negros y exceso de grasa.",
+        img: "images/zero-pore-oil.jpg"
+    },
+    {
+        id: 77,
+        name: "Zero Pore Pad (155 g)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Almohadillas tónicas pre-empapadas para una exfoliación diaria y control de poros.",
+        img: "images/zero-pore-pad.jpg"
+    },
+    {
+        id: 78,
+        name: "Azelaic Niacinamide Deep Serum",
+        category: "belleza",
+        price: 0.00,
+        desc: "Sérum avanzado contra manchas persistentes y marcas de acné.",
+        img: "images/azelaic-niacinamide.jpg"
+    },
+    {
+        id: 79,
+        name: "TXA + Niacinamide (30 ml)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Tratamiento intensivo despigmentante para recuperar la luminosidad de la piel.",
+        img: "images/txa-niacinamide.jpg"
+    },
+    {
+        id: 80,
+        name: "One Day Exosome Shot",
+        category: "belleza",
+        price: 0.00,
+        desc: "Tratamiento renovador celular de noche de alta eficacia cosmética.",
+        img: "images/exosome-shot.jpg"
+    },
+    {
+        id: 81,
+        name: "Collagen Jelly Cream (110 ml)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Crema texturizada tipo gelatina rica en colágeno para un efecto 'glass skin' voluminoso.",
+        img: "images/collagen-jelly-110.jpg"
+    },
+    {
+        id: 82,
+        name: "Collagen Jelly Cream (50 ml)",
+        category: "belleza",
+        price: 0.00,
+        desc: "Presentación compacta de crema de colágeno para hidratación firme y elástica.",
+        img: "images/collagen-jelly-50.jpg"
+    },
+    {
+        id: 83,
+        name: "Collagen Night Wrapping Mask",
+        category: "belleza",
+        price: 0.00,
+        desc: "Mascarilla nocturna efecto envoltura que sella la hidratación y colágeno mientras duermes.",
+        img: "images/collagen-mask.jpg"
+    },
+    {
+        id: 84,
+        name: "Retinal Shot",
+        category: "belleza",
+        price: 0.00,
+        desc: "Crema antiedad potente con retinal activo para disminuir líneas de expresión.",
+        img: "images/retinal-shot.jpg"
+    }
+];
+        
 
         let cart = [];
 
