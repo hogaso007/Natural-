@@ -18,7 +18,6 @@
         .font-serif {
             font-family: 'Cormorant Garamond', serif;
         }
-        /* Animación de entrada */
         @keyframes logoFade {
             0% { opacity: 0; transform: scale(0.9); filter: blur(5px); }
             50% { opacity: 1; transform: scale(1); filter: blur(0px); }
@@ -56,7 +55,6 @@
                 </div>
 
                 <div class="hidden md:flex space-x-6 h-full items-center">
-                    
                     <div class="relative group h-full flex items-center">
                         <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
                             Péptidos <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
@@ -65,11 +63,8 @@
                             <a href="#productos" onclick="filterCategory('peptidos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Todo Péptidos</a>
                         </div>
                     </div>
-
                     <div class="relative group h-full flex items-center">
-                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
-                            Tirzepatida <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
-                        </button>
+                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">Tirzepatida <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i></button>
                         <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
                             <a href="#productos" onclick="filterCategory('tirzepatida')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">T.G.</a>
                             <a href="#productos" onclick="filterCategory('tirzepatida')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Lipoless</a>
@@ -78,43 +73,30 @@
                             <a href="#productos" onclick="filterCategory('tirzepatida')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Tirzedral</a>
                         </div>
                     </div>
-
                     <div class="relative group h-full flex items-center">
-                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
-                            Retatrutide <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
-                        </button>
+                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">Retatrutide <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i></button>
                         <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
                             <a href="#productos" onclick="filterCategory('retatrutide')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Línea Avanzada GGG</a>
                         </div>
                     </div>
-
                     <div class="relative group h-full flex items-center">
-                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
-                            Perfumes <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
-                        </button>
+                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">Perfumes <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i></button>
                         <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
                             <a href="#productos" onclick="filterCategory('perfumes')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Extractos de Alta Gama</a>
                         </div>
                     </div>
-
                     <div class="relative group h-full flex items-center">
-                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
-                            Suplementos <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
-                        </button>
+                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">Suplementos <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i></button>
                         <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
                             <a href="#productos" onclick="filterCategory('suplementos')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Línea Premium</a>
                         </div>
                     </div>
-
                     <div class="relative group h-full flex items-center">
-                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">
-                            Anabolizantes <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i>
-                        </button>
+                        <button class="text-stone-600 hover:text-emerald-900 font-medium text-sm tracking-wide flex items-center gap-1 transition-colors">Anabolizantes <i class="fa-solid fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform duration-300"></i></button>
                         <div class="absolute top-[100%] left-0 w-56 bg-white shadow-xl rounded-b-lg border border-stone-100 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 py-3 flex flex-col">
                             <a href="#productos" onclick="filterCategory('anabolizantes')" class="px-5 py-2 hover:bg-stone-50 text-sm text-stone-600 hover:text-emerald-800">Rendimiento Técnico</a>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="flex items-center space-x-4">
@@ -190,29 +172,24 @@
     </header>
 
     <main id="productos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    
-    <!-- MENÚ DE CATEGORÍAS (Corregido: Se reemplazó Suplementos por Belleza) -->
-    <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 border-b border-stone-200 pb-6">
-        <button onclick="filterCategory('all')" id="btn-all" class="cat-btn active text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all bg-emerald-950 text-white">Todos</button>
-        <button onclick="filterCategory('peptidos')" id="btn-peptidos" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Péptidos</button>
-        <button onclick="filterCategory('tirzepatida')" id="btn-tirzepatida" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Tirzepatida</button>
-        <button onclick="filterCategory('retatrutide')" id="btn-retatrutide" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Retatrutide</button>
-        <button onclick="filterCategory('perfumes')" id="btn-perfumes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Perfumes</button>
-        <button onclick="filterCategory('belleza')" id="btn-belleza" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Belleza / Skincare</button>
-        <button onclick="filterCategory('anabolizantes')" id="btn-anabolizantes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Anabolizantes</button>
-    </div>
+        <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 border-b border-stone-200 pb-6">
+            <button onclick="filterCategory('all')" id="btn-all" class="cat-btn active text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all bg-emerald-950 text-white">Todos</button>
+            <button onclick="filterCategory('peptidos')" id="btn-peptidos" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Péptidos</button>
+            <button onclick="filterCategory('tirzepatida')" id="btn-tirzepatida" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Tirzepatida</button>
+            <button onclick="filterCategory('retatrutide')" id="btn-retatrutide" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Retatrutide</button>
+            <button onclick="filterCategory('perfumes')" id="btn-perfumes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Perfumes</button>
+            <button onclick="filterCategory('belleza')" id="btn-belleza" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Belleza / Skincare</button>
+            <button onclick="filterCategory('anabolizantes')" id="btn-anabolizantes" class="cat-btn text-xs md:text-sm font-medium tracking-wider uppercase px-5 py-2.5 rounded transition-all text-stone-600 hover:bg-stone-100">Anabolizantes</button>
+        </div>
 
-    <!-- GRID DE PRODUCTOS -->
-    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-    </div>
-</main>
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+    </main>
 
     <div id="cart-sidebar" class="fixed inset-0 z-50 overflow-hidden pointer-events-none">
         <div id="cart-backdrop" onclick="toggleCart(false)" class="absolute inset-0 bg-stone-900/40 backdrop-blur-sm opacity-0 transition-opacity duration-500 ease-in-out pointer-events-none"></div>
-        
+
         <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
             <div id="cart-panel" class="w-screen max-w-md transform translate-x-full transition-transform duration-500 ease-in-out bg-white shadow-2xl flex flex-col pointer-events-auto">
-                
                 <div class="p-6 border-b border-stone-100 flex items-center justify-between">
                     <h3 class="font-serif text-2xl text-emerald-950 font-semibold">Tu Selección</h3>
                     <button onclick="toggleCart(false)" class="p-2 text-stone-400 hover:text-stone-700 transition-colors">
@@ -230,11 +207,10 @@
                         <p id="cart-total" class="font-serif text-xl font-bold text-emerald-950">Bs. 0.00</p>
                     </div>
                     <p class="mt-0.5 text-xs text-stone-400 font-light mb-4">Envío premium express asegurado e impuestos incluidos.</p>
-                    <button onclick="checkout()" class="w-full bg-emerald-950 hover:bg-emerald-900 text-white font-medium text-xs tracking-widest uppercase py-4 transition-colors rounded shadow-md">
+                    <button id="cart-action-btn" onclick="checkout()" class="w-full bg-emerald-950 hover:bg-emerald-900 text-white font-medium text-xs tracking-widest uppercase py-4 transition-colors rounded shadow-md">
                         Proceder al Pago
                     </button>
                 </div>
-
             </div>
         </div>
     </div>
@@ -246,9 +222,7 @@
 
     <script>
         const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1608248597481-496100c8c836?auto=format&fit=crop&w=400&q=80";
-
         const products = [
-            // --- SECCIÓN: TIRZEPATIDA ---
             { id: 1, name: "T.G. 15MG", category: "tirzepatida", price: 1500.00, desc: "Tirzepatide en presentación de 15mg.", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-15.png" },
             { id: 2, name: "T.G. 12.5MG", category: "tirzepatida", price: 1300.00, desc: "Tirzepatide en presentación de 12.5mg.", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-125.png" },
             { id: 3, name: "T.G. 10MG", category: "tirzepatida", price: 1400.00, desc: "Tirzepatide en presentación de 10mg.", img: "https://imfar.com.bo/wp-content/uploads/2026/02/TG-10.png" },
@@ -264,8 +238,6 @@
             { id: 13, name: "TIRZEC 15MG 4 ampollas", category: "tirzepatida", price: 1400.00, desc: "Tirzec en presentación de 15mg (4 ampollas).", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXnpWZm6LXBCSthDGrS0vzipSluLHNPHzlSg&s" },
             { id: 14, name: "LIPOLAND- 15MG", category: "tirzepatida", price: 1700.00, desc: "Lipoland en presentación avanzada de 15mg.", img: "https://http2.mlstatic.com/D_NQ_NP_806016-MLC107540281744_032026-O.webp" },
             { id: 15, name: "TIRZEDRAL 15MG", category: "tirzepatida", price: 1600.00, desc: "Tirzedral en presentación de 15mg.", img: "https://ononxkbhfufuxpipqhxd.supabase.co/storage/v1/object/public/admin-uploads/products/1773358761325-65lyi19qusd.jpg" },
-
-            // --- SECCIÓN: RETATRUTIDE ---
             { id: 16, name: "TNL- RETATRUTIDE 40MG", category: "retatrutide", price: 2400.00, desc: "Retatrutide avanzado para optimización metabólica integral.", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663029581289/5DdYFHJLZQUemYaFCcWCBy/retatrutide-40mg-pen_8543f2d2.webp" },
             { id: 17, name: "RETATRUTIDE - 40 MG - OXYGEN 4 AMPOLAS", category: "retatrutide", price: 2000.00, desc: "Retatrutide de la línea Oxigen (4 ampollas).", img: "https://5.imimg.com/data5/SELLER/Default/2025/12/571938804/RW/VV/QR/25098227/retatrutide-40mg-rt40.jpg" },
             { id: 18, name: "RETATRUTIDE - 40 MG - OXYGEN - Lapicero", category: "retatrutide", price: 2300.00, desc: "Presentación Oxigen en formato lapicero/caneta.", img: "https://probook.s3.sa-east-1.amazonaws.com/products/6d6d4cb5-7562-43ad-b1d3-f485a39c727c.webp" },
@@ -275,8 +247,6 @@
             { id: 22, name: "RETATRUTIDE - 120MG- ZPHC KIT", category: "retatrutide", price: 7500.00, desc: "Kit premium de máxima concentración por laboratorios ZPHC.", img: "https://atacadoparaguai.com/wp-content/uploads/2026/04/PERFUMES-ARABES.jpeg" },
             { id: 23, name: "RETATRUTIDE - 40MG- ZPHC KIT", category: "retatrutide", price: 3000.00, desc: "Kit clínico de Retatrutide por laboratorios ZPHC.", img: "https://peptidoslife.com/wp-content/uploads/2025/12/Retatrutide-Marca-zphc-PEPTIDOS-LIFE.jpg" },
             { id: 24, name: "RETATRUTIDE - 15MG- ZPHC", category: "retatrutide", price: 1800.00, desc: "Presentación estándar de Retatrutide por ZPHC.", img: "https://zahrafarmaceutica.com.py/cdn/shop/files/PHOTO-2026-01-22-00-46-54_4183d24a-eab3-49f9-bf48-df6888a829c2_1200x.jpg?v=1769054102" },
-
-            // --- SECCIÓN: PÉPTIDOS ---
             { id: 25, name: "BPC-157 + TB500 ALUVI LAPICERO", category: "peptidos", price: 3500.00, desc: "Fórmula combinada Recovery & Regeneración en lapicero.", img: "https://peptidepowereu.is/wp-content/uploads/2025/10/BPC-157-TB-500-scaled-1.jpg" },
             { id: 26, name: "BPC 157", category: "peptidos", price: 1700.00, desc: "Péptido puro de alta eficacia regenerativa tisular.", img: "https://purehydrationspa.com/wp-content/uploads/2025/07/Group-22-1.png" },
             { id: 27, name: "TB500", category: "peptidos", price: 1750.00, desc: "Péptido enfocado en la reparación muscular y cicatrización.", img: "https://m.media-amazon.com/images/I/514NgWFLv6L._AC_UF894,1000_QL80_.jpg" },
@@ -305,330 +275,95 @@
             { id: 50, name: "KLOW -80MG", category: "peptidos", price: 2400.00, desc: "Compuesto avanzado de alta concentración celular.", img: "https://alphabiomedlabs.com/cdn/shop/files/ABM-SC-KLOW-80_d31b6af6-53ee-4b1b-9e55-7931e2c2921a.webp?v=1759858950&width=1946" },
             { id: 51, name: "ZPTROPAQ 30MG -ZPHC", category: "peptidos", price: 5000.00, desc: "Línea premium de alta gama para optimización celular.", img: "https://www.ecbt.org/wp-content/uploads/2025/12/ZPTROP-150IU-AQ-15IU-10VIAL-ZPHC-7.webp" },
             { id: 52, name: "HP-HCG 5000UI - ZPHC", category: "peptidos", price: 5000.00, desc: "Gonadotropina coriónica humana purificada de grado clínico.", img: "https://www.ecbt.org/wp-content/uploads/2025/12/hp-hcg.jpg" },
-
-            // --- SECCIÓN: PERFUMES ---
-            { 
-        id: 53, 
-        name: "Oud Impérial Extrait", 
-        category: "perfumes", 
-        price: 145.00, 
-        desc: "Alta perfumería. Notas profundas de madera oud, resinas y ámbar.", 
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR62nPtELfrypb1RX5-soh214u97fbewcJNbQ&s" 
-    },
-    { 
-        id: 54, 
-        name: "Éclat de Verveine", 
-        category: "perfumes", 
-        price: 115.00, 
-        desc: "Frescura botánica con destellos cítricos de verbena y jazmín.", 
-        img: "https://www.plantesetparfums.com/cdn/shop/files/EDT_1_87bf1260-84e8-46a5-b8fe-456edcaf55ea.png?v=1714744682&width=1500" 
-    },
-    { 
-        id: 55, 
-        name: "9 PM Clásico - Afnan (150 ml)", 
-        category: "perfumes", 
-        price: 530.00, 
-        desc: "Fragancia oriental premium. Notas intensas, seductoras y magnéticas de larga duración.", 
-        img: "https://m.media-amazon.com/images/I/71trrip1-WL.jpg" 
-    },
-    { 
-        id: 56, 
-        name: "9pm red", 
-        category: "perfumes", 
-        price: 480.00, 
-        desc: "Edición especial con acordes vibrantes, audaces y especiados de carácter único.", 
-        img: "https://us.afnan.com/cdn/shop/files/Untitled_design_52.png?v=1775219148&width=1080" 
-    },
-    { 
-        id: 57, 
-        name: "Hawas Malibu (100 ml)", 
-        category: "perfumes", 
-        price: 480.00, 
-        desc: "Esencia acuática y fresca inspirada en la costa, perfecta para destacar con sofisticación.", 
-        img: "https://http2.mlstatic.com/D_NQ_NP_950771-MLA106903796458_022026-O.webp" 
-    },
-    { 
-        id: 58, 
-        name: "Hawas Tropical (100 ml)", 
-        category: "perfumes", 
-        price: 480.00, 
-        desc: "Fusión frutal y exótica de alta concentración que evoca frescura y elegancia veraniega.", 
-        img: "https://wonder.com.bo/wp-content/uploads/2026/05/tropical-4-247x247.jpg" 
-    },
-    {
-        id: 59,
-        name: "Karma - Lush (Eau de Parfum, 100 ml)",
-        category: "perfumes",
-        price: 0.00,
-        desc: "Fragancia icónica con capas intensas de pachulí, naranja dulce y pino.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLG9RIQBLaN2XyORfIqpYFX4wiZsJ8tEKckg&s"
-    },
-    {
-        id: 60,
-        name: "No. IV Jus D’Amour - Ramon Blazar (Eau de Parfum, 100 ml)",
-        category: "perfumes",
-        price: 0.00,
-        desc: "Esencia exclusiva de alta costura con notas románticas y cautivadoras.",
-        img: "https://http2.mlstatic.com/D_NQ_NP_741197-MLU77134343120_062024-O.webp"
-    },
-    {
-        id: 61,
-        name: "9 PM Rebel - Afnan (100 ml)",
-        category: "perfumes",
-        price: 0.00,
-        desc: "Versión audaz y enérgica para romper esquemas con estela prolongada.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiZRqmqzvn-7snAbZ4rgPVaWi-YO0fqp5PA&s"
-    },
-    {
-        id: 62,
-        name: "Bombe Rose - Rivoli Parfums (100 ml)",
-        category: "perfumes",
-        price: 0.00,
-        desc: "Explosión floral sofisticada diseñada para destacar en ocasiones especiales.",
-        img: "https://m.media-amazon.com/images/I/71-R4-jOrxL.jpg"
-    },
-    {
-        id: 63,
-        name: "Invincible - Rivoli Parfums (100 ml)",
-        category: "perfumes",
-        price: 0.00,
-        desc: "Aroma imponente y masculino que evoca poder, frescura y magnetismo.",
-        img: "https://m.media-amazon.com/images/I/71a2vf+GoWL.jpg"
-    },
-    {
-        id: 64,
-        name: "Faraon (100 ml)",
-        category: "perfumes",
-        price: 0.00,
-        desc: "Notas místicas y amaderadas inspiradas en la realeza del antiguo oriente.",
-        img: "https://wonder.com.bo/wp-content/uploads/2025/06/Bharara-Pharaoh-Ramesses-100ml.jpg"
-    },
-
-    // === PRODUCTOS DE BELLEZA / SKINCARE (IDs 66-84) ===
-    {
-        id: 66,
-        name: "Centella Poremizing Clear Toner (Skin1004)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Tónico líquido con sal rosa del Himalaya que limpia impurezas y minimiza poros.",
-        img: "https://statics.promofarma.com/static/promofarma/prod/product_images/z/1RM756C5_es_ES_0.jpeg"
-    },
-    {
-        id: 67,
-        name: "Centella Poremizing Fresh Ampoule (Skin1004)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Sérum concentrado de rápida absorción para el control de sebo y elasticidad del poro.",
-        img: "https://aleenbeauty.com/cdn/shop/files/b615ebad-d423-4d2d-93c6-b9df857a160e.jpg?v=1739698475"
-    },
-    {
-        id: 68,
-        name: "Tea-trica BHA Foam (125 ml)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Espuma limpiadora exfoliante ideal para pieles con tendencia al acné.",
-        img: "https://www.lecoreane.com/cdn/shop/files/6_a075335e-e6d8-4ea0-832d-5a15201723ff.png?v=1701407459"
-    },
-    {
-        id: 69,
-        name: "Tea-trica B5 Cream (75 ml)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Crema calmante e hidratante con vitamina B5 para restaurar la barrera cutánea.",
-        img: "https://best.com.bo/wp-content/uploads/2026/02/8809913830047.jpg"
-    },
-    {
-        id: 70,
-        name: "Tea-trica Relief Ampoule (100 ml)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Ampolla de alivio rápido contra rojeces e irritaciones de la piel.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbdvMrR69bfEZACwuda8LNA9F_cZqXl6-o4Q&s"
-    },
-    {
-        id: 71,
-        name: "Poremizing Deep Cleansing Foam (125 ml)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Limpiador profundo que remueve residuos de maquillaje y destapa los poros.",
-        img: "https://m.media-amazon.com/images/I/619WkLrPMLL._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-        id: 72,
-        name: "Poremizing Light Gel Cream (75 ml)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Crema en gel ultra ligera que refresca e hidrata sin dejar sensación grasosa.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLUJJzsn1n2ItCnzjzVUW5xIrYGfkQ5eB9Jw&s"
-    },
-    {
-        id: 73,
-        name: "Toner Brightening Capsule Ampoule (100 ml)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Ampolla aclarante con cápsulas activas para unificar el tono de la piel.",
-        img: "https://m.media-amazon.com/images/I/61BitEhf6OL._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-        id: 74,
-        name: "Travel Kit Centella",
-        category: "belleza",
-        price: 0.00,
-        desc: "Set de viaje con los pasos esenciales de la línea Centella Asiática.",
-        img: "https://farmacorp.com/cdn/shop/files/8809576261233_700x700.jpg?v=1770784052"
-    },
-    {
-        id: 75,
-        name: "Red Toner (100 ml)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Tónico revitalizante formulado para calmar pieles extremadamente sensibles.",
-        img: "https://m.media-amazon.com/images/I/61xkp9CBnUL._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-        id: 76,
-        name: "Zero Pore Blackhead Deep Cleansing Oil (Medicube)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Aceite limpiador especializado en disolver puntos negros y exceso de grasa.",
-        img: "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/mcb/mcb11461/y/17.jpg"
-    },
-    {
-        id: 77,
-        name: "Zero Pore Pad (155 g)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Almohadillas tónicas pre-empapadas para una exfoliación diaria y control de poros.",
-        img: "https://cdn11.bigcommerce.com/s-63354/images/stencil/1280x1280/products/9645/24953/Medicube_Zero_Pore_Pad_155g_-_70_Pack__13121.1747750889.jpg?c=2"
-    },
-    {
-        id: 78,
-        name: "Azelaic Niacinamide Deep Serum",
-        category: "belleza",
-        price: 0.00,
-        desc: "Sérum avanzado contra manchas persistentes y marcas de acné.",
-        img: "https://m.media-amazon.com/images/I/71Utf5h60BL.jpg"
-    },
-    {
-        id: 79,
-        name: "TXA + Niacinamide (30 ml)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Tratamiento intensivo despigmentante para recuperar la luminosidad de la piel.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKtUsXYW3IgZ5r6iz7kjo-gvtWevssPHdxpw&s"
-    },
-    {
-        id: 80,
-        name: "One Day Exosome Shot",
-        category: "belleza",
-        price: 0.00,
-        desc: "Tratamiento renovador celular de noche de alta eficacia cosmética.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRShi-GIM5VwYnwJfJOZQ6VAFmUDU6Jyxdxkw&s"
-    },
-    {
-        id: 81,
-        name: "Collagen Jelly Cream (110 ml)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Crema texturizada tipo gelatina rica en colágeno para un efecto 'glass skin' voluminoso.",
-        img: "https://media.zid.store/66f17660-7688-4880-a046-314601e00029/8fd3969d-c909-448d-bb83-c7a01e2a9119.jpg"
-    },
-    {
-        id: 82,
-        name: "Collagen Jelly Cream (50 ml)",
-        category: "belleza",
-        price: 0.00,
-        desc: "Presentación compacta de crema de colágeno para hidratación firme y elástica.",
-        img: "https://www.baredewstudio.com/cdn/shop/files/medicube-CollagenJellyCream.png?v=1734572308"
-    },
-    {
-        id: 83,
-        name: "Collagen Night Wrapping Mask",
-        category: "belleza",
-        price: 0.00,
-        desc: "Mascarilla nocturna efecto envoltura que sella la hidratación y colágeno mientras duermes.",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2hJIAqtp2IqNpsjEoW3Ww0f-9kETAd0Y2Q&s"
-    },
-    {
-        id: 84,
-        name: "Retinal Shot",
-        category: "belleza",
-        price: 0.00,
-        desc: "Crema antiedad potente con retinal activo para disminuir líneas de expresión.",
-        img: "https://btime.om/cdn/shop/files/RetinalBooster.webp?v=1744249476&width=1080"
-    },
-    // --- SECCIÓN: ANABOLIZANTES (Extraídos de image_d6af02.jpg) ---
-        // MARCA: LANDERLAN
-        { id: 85, name: "STANOZOLAND - DEPOT INY 15ML", category: "anabolizantes", price: 90.00, desc: "Estanozolol inyectable de grado farmacéutico Landerlan. Soporte para definición limpia.", img: "https://http2.mlstatic.com/D_NQ_NP_899874-MLM82955840499_032025-O.webp" },
-        { id: 86, name: "STANOZOLAND DEPOT YNI 30ML", category: "anabolizantes", price: 165.00, desc: "Presentación extendida de Estanozolol inyectable Landerlan para ciclos avanzados.", img: "https://product-media.cdn.t1.com/product-channel/65393/2025/10/6/0c340d18a8d85d0637bafbac3392188f.jpg" },
-        { id: 87, name: "STANOZOLAND DEPO 100 COMPRIMIDO", category: "anabolizantes", price: 90.00, desc: "Estanozolol en versión oral comprimida Landerlan. Alta pureza y asimilación óptima.", img: "https://http2.mlstatic.com/D_NQ_NP_906970-MLA83182708576_042025-O.webp" },
-        { id: 88, name: "OXITOLAND 50MG 50 COMPRIMIDOS", category: "anabolizantes", price: 90.00, desc: "Oximetolona de alta concentración Landerlan. Potente agente de desarrollo muscular.", img: "https://http2.mlstatic.com/D_NQ_NP_902733-MLA87626069368_072025-O.webp" },
-        { id: 89, name: "OXANDROLAND 5MG 100 COMPRIMIDOS", category: "anabolizantes", price: 285.00, desc: "Oxandrolona pura en dosis moderada Landerlan. Ideal para tonificación y fuerza.", img: "https://http2.mlstatic.com/D_NQ_NP_992683-MLM96140066145_102025-O.webp" },
-        { id: 90, name: "OXANDROLAND 10MG 50COMPRIMIDOS", category: "anabolizantes", price: 285.00, desc: "Oxandrolona optimizada de 10mg Landerlan para máximo rendimiento metabólico.", img: "https://http2.mlstatic.com/D_NQ_NP_959914-MLM104462058780_012026-O.webp" },
-        { id: 91, name: "PROPIONATE DE TESTOSTERONE 100MG -10ML", category: "anabolizantes", price: 150.00, desc: "Propionato de testosterona de acción rápida Landerlan. Vial de 10ml.", img: "https://cpimg.tistatic.com/10160275/b/4/testo-sterone-propionate-100-mg-injection-vial..jpg" },
-        { id: 92, name: "DROSTANOLONA 100MG - 10ML", category: "anabolizantes", price: 200.00, desc: "Drostanolona (Masteron) Landerlan. Máxima dureza muscular y estética competitiva.", img: "https://http2.mlstatic.com/D_NQ_NP_996105-MLA101058184088_122025-O.webp" },
-        { id: 93, name: "TREMBOLONE ENANTATO 100MG - 10ML", category: "anabolizantes", price: 215.00, desc: "Enantato de trembolona de liberación prolongada Landerlan para ciclos de calidad.", img: "https://http2.mlstatic.com/D_NQ_NP_893087-MLM104250204254_012026-O.webp" },
-        { id: 94, name: "TREMBOLONE - ACETATO 100MG - 10ML", category: "anabolizantes", price: 215.00, desc: "Acetato de trembolona de acción inmediata Landerlan. Máxima potencia.", img: "https://http2.mlstatic.com/D_NQ_NP_830153-MLA105593651685_012026-O.webp" },
-        { id: 95, name: "DURATESTOLAND PLUS 250ML - 10ML", category: "anabolizantes", price: 200.00, desc: "Mezcla inteligente de testosteronas (Sustanon) por Landerlan. Vial de 10ml.", img: "https://http2.mlstatic.com/D_NQ_NP_855925-MLM95713457890_102025-O.webp" },
-        { id: 96, name: "TESTENAT DEPOT 250MG - 10ML", category: "anabolizantes", price: 185.00, desc: "Enantato de testosterona premium Landerlan. Base fundamental para rendimiento.", img: "https://http2.mlstatic.com/D_NQ_NP_640145-MLM90177152310_082025-O.webp" },
-        { id: 97, name: "METENOLONA E (PRIMOBOLAN) 100MG/ML - 10ML", category: "anabolizantes", price: 430.00, desc: "Enantato de metenolona de alta pureza Landerlan. El estándar de oro en estética.", img: "https://http2.mlstatic.com/D_NQ_NP_706063-MLA105020923720_012026-O.webp" },
-        { id: 98, name: "BOLDENONA 250MG/ML - 10ML", category: "anabolizantes", price: 195.00, desc: "Undecilenato de boldenona Landerlan. Promueve vascularidad y desarrollo constante.", img: "https://http2.mlstatic.com/D_NQ_NP_932257-MLA101058226148_122025-O.webp" },
-        { id: 99, name: "DECALAND DEPOT 200MG/ML - 10ML", category: "anabolizantes", price: 190.00, desc: "Decanato de nandrolona Landerlan. Soporte articular y desarrollo de masa masiva.", img: "https://http2.mlstatic.com/D_NQ_NP_702907-MLM75913933256_042024-O.webp" },
-        { id: 100, name: "TESTOLAND DEPOT 100MG/ML -", category: "anabolizantes", price: 130.00, desc: "Cipionato de testosterona Landerlan. Excelente tasa de absorción y estabilidad.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnWeiDpCX59qa_yhRtIugXei4Fa-BYZCzYw&s" },
-
-        // MARCA: ROYAL
-        { id: 101, name: "SUSTANON", category: "anabolizantes", price: 620.00, desc: "Fórmula compuesta multiéster de testosterona de la prestigiosa línea Royal.", img: "https://http2.mlstatic.com/D_NQ_NP_866063-MLA91206994452_092025-O.webp" },
-        { id: 102, name: "NANDROLONA D", category: "anabolizantes", price: 650.00, desc: "Decanato de nandrolona premium Royal para optimización de fuerza estructural.", img: "https://http2.mlstatic.com/D_NQ_NP_769625-MLM94579932757_102025-O.webp" },
-
-        // MARCA: SYNTEX LABS
-        { id: 103, name: "TEXTOTEX E250", category: "anabolizantes", price: 440.00, desc: "Enantato de testosterona de alta concentración desarrollado por Syntex Labs.", img: "https://getfit.mx/cdn/shop/products/textotexx.png?v=1773992809" },
-        { id: 104, name: "TEXTOTEXB350", category: "anabolizantes", price: 430.00, desc: "Fórmula avanzada híbrida de testosterona Syntex Labs de alta densidad.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTFPzQt8VcmCUFPmcuxBc7fcgVPWqBnfl2vQ&s" },
-        { id: 105, name: "TEXTOTEX CYP 250", category: "anabolizantes", price: 380.00, desc: "Cipionato de testosterona premium Syntex Labs para niveles estables y óptimos.", img: "https://image.jimcdn.com/app/cms/image/transf/none/path/s503e10c78b0be4d3/image/ic1e3c7d58b0953a3/version/1700200491/image.jpg" },
-        { id: 106, name: "NANDROTEX NPP", category: "anabolizantes", price: 420.00, desc: "Fenilpropionato de nandrolona de acción corta por Syntex Labs.", img: "https://http2.mlstatic.com/D_Q_NP_2X_605993-MLA104556752330_012026-P.webp" },
-
-        // MARCA: COOPER
-        { id: 107, name: "MULTIVITAMINICO - 120 COMPRIMIDOS COOPER", category: "anabolizantes", price: 650.00, desc: "Complejo vitamínico y mineral de grado clínico para atletas de alta demanda.", img: "https://m.media-amazon.com/images/I/51eUwg7C-2L._AC_UF1000,1000_QL80_.jpg" },
-        { id: 108, name: "ENANBOLIC - TESTOSTERONA ENANTHATE 200MG/ML", category: "anabolizantes", price: 1290.00, desc: "Enantato de testosterona certificado por Cooper Laboratories. Calidad médica.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhhOwUNSzxQi-2L6YhA_ExqjFyRyiCp-oqzA&s" },
-        { id: 109, name: "PROBOLIC -TESTOSTERONA PROPIONATE 100MG/ML", category: "anabolizantes", price: 700.00, desc: "Propionato de testosterona Cooper. Pureza absoluta de acción inmediata.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-OCPIiSYPOxzsXhs7J0hedif7WBOhjtRBw&s" },
-        { id: 110, name: "SUSOBOLIC - TESTORENE 250MG /ML -COOPER", category: "anabolizantes", price: 870.00, desc: "Mezcla de testosteronas premium Susobolic de laboratorios Cooper.", img: "https://lh3.googleusercontent.com/c3XIAbzD4UCxO6dcNeBT6mW3MEcd470-QkPu9WtpiTo5IZZnplQeTG-9VuuhZJ0AVb7wMSY_XZU_vt8hCRvfB_DMmghrlG2J7nIjLOAyCogzHBM" },
-        { id: 111, name: "DECABOLIC - NANDROLONE DECANOATE", category: "anabolizantes", price: 870.00, desc: "Decanato de nandrolona certificado Cooper para regeneración y volumen.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs2uXnoab8js-qYtOToIB0DZHuVwYcp1My3g&s" },
-        { id: 112, name: "BOLBOLIC - BOLDENONE UNCECYLENATE", category: "anabolizantes", price: 990.00, desc: "Undecilenato de boldenona Cooper Laboratories. Grado de exportación premium.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpt4g0491FH8QOo1m232LNfsuI8QdPG3zeQ&s" },
-        { id: 113, name: "NABOLIC - PH - NANDROLONE PHENYLPROPIONATE", category: "anabolizantes", price: 840.00, desc: "Fenilpropionato de nandrolona Cooper para atletas enfocados en calidad limpia.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AFRFrbYdj-D-8xD93A6sRnTpj9duOPx68w&s" },
-        { id: 114, name: "WINOBOLIC - COOPER", category: "anabolizantes", price: 730.00, desc: "Estanozolol de alta pureza Cooper Laboratories para rendimiento de vanguardia.", img: "https://cooperpharma.com/images/products/winbolic.png" },
-        { id: 115, name: "HGH-SOMATROPIN - COOPER", category: "anabolizantes", price: 4800.00, desc: "Hormona de crecimiento humano (Somatropina) Cooper de pureza biológica máxima.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbgXSaeM-wlNmkXUMDzQO_d4d0RFqBPqVzQ&s" }
+            { id: 53, name: "Oud Impérial Extrait", category: "perfumes", price: 145.00, desc: "Alta perfumería. Notas profundas de madera oud, resinas y ámbar.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR62nPtELfrypb1RX5-soh214u97fbewcJNbQ&s" },
+            { id: 54, name: "Éclat de Verveine", category: "perfumes", price: 115.00, desc: "Frescura botánica con destellos cítricos de verbena y jazmín.", img: "https://www.plantesetparfums.com/cdn/shop/files/EDT_1_87bf1260-84e8-46a5-b8fe-456edcaf55ea.png?v=1714744682&width=1500" },
+            { id: 55, name: "9 PM Clásico - Afnan (150 ml)", category: "perfumes", price: 530.00, desc: "Fragancia oriental premium. Notas intensas, seductoras y magnéticas de larga duración.", img: "https://m.media-amazon.com/images/I/71trrip1-WL.jpg" },
+            { id: 56, name: "9pm red", category: "perfumes", price: 480.00, desc: "Edición especial con acordes vibrantes, audaces y especiados de carácter único.", img: "https://us.afnan.com/cdn/shop/files/Untitled_design_52.png?v=1775219148&width=1080" },
+            { id: 57, name: "Hawas Malibu (100 ml)", category: "perfumes", price: 480.00, desc: "Esencia acuática y fresca inspirada en la costa, perfecta para destacar con sofisticación.", img: "https://http2.mlstatic.com/D_NQ_NP_950771-MLA106903796458_022026-O.webp" },
+            { id: 58, name: "Hawas Tropical (100 ml)", category: "perfumes", price: 480.00, desc: "Fusión frutal y exótica de alta concentración que evoca frescura y elegancia veraniega.", img: "https://wonder.com.bo/wp-content/uploads/2026/05/tropical-4-247x247.jpg" },
+            { id: 59, name: "Karma - Lush (Eau de Parfum, 100 ml)", category: "perfumes", price: 0.00, desc: "Fragancia icónica con capas intensas de pachulí, naranja dulce y pino.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLG9RIQBLaN2XyORfIqpYFX4wiZsJ8tEKckg&s" },
+            { id: 60, name: "No. IV Jus D’Amour - Ramon Blazar (Eau de Parfum, 100 ml)", category: "perfumes", price: 0.00, desc: "Esencia exclusiva de alta costura con notas románticas y cautivadoras.", img: "https://http2.mlstatic.com/D_NQ_NP_741197-MLU77134343120_062024-O.webp" },
+            { id: 61, name: "9 PM Rebel - Afnan (100 ml)", category: "perfumes", price: 0.00, desc: "Versión audaz y enérgica para romper esquemas con estela prolongada.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXiZRqmqzvn-7snAbZ4rgPVaWi-YO0fqp5PA&s" },
+            { id: 62, name: "Bombe Rose - Rivoli Parfums (100 ml)", category: "perfumes", price: 0.00, desc: "Explosión floral sofisticada diseñada para destacar en ocasiones especiales.", img: "https://m.media-amazon.com/images/I/71-R4-jOrxL.jpg" },
+            { id: 63, name: "Invincible - Rivoli Parfums (100 ml)", category: "perfumes", price: 0.00, desc: "Aroma imponente y masculino que evoca poder, frescura y magnetismo.", img: "https://m.media-amazon.com/images/I/71a2vf+GoWL.jpg" },
+            { id: 64, name: "Faraon (100 ml)", category: "perfumes", price: 0.00, desc: "Notas místicas y amaderadas inspiradas en la realeza del antiguo oriente.", img: "https://wonder.com.bo/wp-content/uploads/2025/06/Bharara-Pharaoh-Ramesses-100ml.jpg" },
+            { id: 66, name: "Centella Poremizing Clear Toner (Skin1004)", category: "belleza", price: 0.00, desc: "Tónico líquido con sal rosa del Himalaya que limpia impurezas y minimiza poros.", img: "https://statics.promofarma.com/static/promofarma/prod/product_images/z/1RM756C5_es_ES_0.jpeg" },
+            { id: 67, name: "Centella Poremizing Fresh Ampoule (Skin1004)", category: "belleza", price: 0.00, desc: "Sérum concentrado de rápida absorción para el control de sebo y elasticidad del poro.", img: "https://aleenbeauty.com/cdn/shop/files/b615ebad-d423-4d2d-93c6-b9df857a160e.jpg?v=1739698475" },
+            { id: 68, name: "Tea-trica BHA Foam (125 ml)", category: "belleza", price: 0.00, desc: "Espuma limpiadora exfoliante ideal para pieles con tendencia al acné.", img: "https://www.lecoreane.com/cdn/shop/files/6_a075335e-e6d8-4ea0-832d-5a15201723ff.png?v=1701407459" },
+            { id: 69, name: "Tea-trica B5 Cream (75 ml)", category: "belleza", price: 0.00, desc: "Crema calmante e hidratante con vitamina B5 para restaurar la barrera cutánea.", img: "https://best.com.bo/wp-content/uploads/2026/02/8809913830047.jpg" },
+            { id: 70, name: "Tea-trica Relief Ampoule (100 ml)", category: "belleza", price: 0.00, desc: "Ampolla de alivio rápido contra rojeces e irritaciones de la piel.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbdvMrR69bfEZACwuda8LNA9F_cZqXl6-o4Q&s" },
+            { id: 71, name: "Poremizing Deep Cleansing Foam (125 ml)", category: "belleza", price: 0.00, desc: "Limpiador profundo que remueve residuos de maquillaje y destapa los poros.", img: "https://m.media-amazon.com/images/I/619WkLrPMLL._AC_UF1000,1000_QL80_.jpg" },
+            { id: 72, name: "Poremizing Light Gel Cream (75 ml)", category: "belleza", price: 0.00, desc: "Crema en gel ultra ligera que refresca e hidrata sin dejar sensación grasosa.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLUJJzsn1n2ItCnzjzVUW5xIrYGfkQ5eB9Jw&s" },
+            { id: 73, name: "Toner Brightening Capsule Ampoule (100 ml)", category: "belleza", price: 0.00, desc: "Ampolla aclarante con cápsulas activas para unificar el tono de la piel.", img: "https://m.media-amazon.com/images/I/61BitEhf6OL._AC_UF1000,1000_QL80_.jpg" },
+            { id: 74, name: "Travel Kit Centella", category: "belleza", price: 0.00, desc: "Set de viaje con los pasos esenciales de la línea Centella Asiática.", img: "https://farmacorp.com/cdn/shop/files/8809576261233_700x700.jpg?v=1770784052" },
+            { id: 75, name: "Red Toner (100 ml)", category: "belleza", price: 0.00, desc: "Tónico revitalizante formulado para calmar pieles extremadamente sensibles.", img: "https://m.media-amazon.com/images/I/61xkp9CBnUL._AC_UF1000,1000_QL80_.jpg" },
+            { id: 76, name: "Zero Pore Blackhead Deep Cleansing Oil (Medicube)", category: "belleza", price: 0.00, desc: "Aceite limpiador especializado en disolver puntos negros y exceso de grasa.", img: "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/mcb/mcb11461/y/17.jpg" },
+            { id: 77, name: "Zero Pore Pad (155 g)", category: "belleza", price: 0.00, desc: "Almohadillas tónicas pre-empapadas para una exfoliación diaria y control de poros.", img: "https://cdn11.bigcommerce.com/s-63354/images/stencil/1280x1280/products/9645/24953/Medicube_Zero_Pore_Pad_155g_-_70_Pack__13121.1747750889.jpg?c=2" },
+            { id: 78, name: "Azelaic Niacinamide Deep Serum", category: "belleza", price: 0.00, desc: "Sérum avanzado contra manchas persistentes y marcas de acné.", img: "https://m.media-amazon.com/images/I/71Utf5h60BL.jpg" },
+            { id: 79, name: "TXA + Niacinamide (30 ml)", category: "belleza", price: 0.00, desc: "Tratamiento intensivo despigmentante para recuperar la luminosidad de la piel.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKtUsXYW3IgZ5r6iz7kjo-gvtWevssPHdxpw&s" },
+            { id: 80, name: "One Day Exosome Shot", category: "belleza", price: 0.00, desc: "Tratamiento renovador celular de noche de alta eficacia cosmética.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRShi-GIM5VwYnwJfJOZQ6VAFmUDU6Jyxdxkw&s" },
+            { id: 81, name: "Collagen Jelly Cream (110 ml)", category: "belleza", price: 0.00, desc: "Crema texturizada tipo gelatina rica en colágeno para un efecto 'glass skin' voluminoso.", img: "https://media.zid.store/66f17660-7688-4880-a046-314601e00029/8fd3969d-c909-448d-bb83-c7a01e2a9119.jpg" },
+            { id: 82, name: "Collagen Jelly Cream (50 ml)", category: "belleza", price: 0.00, desc: "Presentación compacta de crema de colágeno para hidratación firme y elástica.", img: "https://www.baredewstudio.com/cdn/shop/files/medicube-CollagenJellyCream.png?v=1734572308" },
+            { id: 83, name: "Collagen Night Wrapping Mask", category: "belleza", price: 0.00, desc: "Mascarilla nocturna efecto envoltura que sella la hidratación y colágeno mientras duermes.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2hJIAqtp2IqNpsjEoW3Ww0f-9kETAd0Y2Q&s" },
+            { id: 84, name: "Retinal Shot", category: "belleza", price: 0.00, desc: "Crema antiedad potente con retinal activo para disminuir líneas de expresión.", img: "https://btime.om/cdn/shop/files/RetinalBooster.webp?v=1744249476&width=1080" },
+            { id: 85, name: "STANOZOLAND - DEPOT INY 15ML", category: "anabolizantes", price: 90.00, desc: "Estanozolol inyectable de grado farmacéutico Landerlan. Soporte para definición limpia.", img: "https://http2.mlstatic.com/D_NQ_NP_899874-MLM82955840499_032025-O.webp" },
+            { id: 86, name: "STANOZOLAND DEPOT YNI 30ML", category: "anabolizantes", price: 165.00, desc: "Presentación extendida de Estanozolol inyectable Landerlan para ciclos avanzados.", img: "https://product-media.cdn.t1.com/product-channel/65393/2025/10/6/0c340d18a8d85d0637bafbac3392188f.jpg" },
+            { id: 87, name: "STANOZOLAND DEPO 100 COMPRIMIDO", category: "anabolizantes", price: 90.00, desc: "Estanozolol en versión oral comprimida Landerlan. Alta pureza y asimilación óptima.", img: "https://http2.mlstatic.com/D_NQ_NP_906970-MLA83182708576_042025-O.webp" },
+            { id: 88, name: "OXITOLAND 50MG 50 COMPRIMIDOS", category: "anabolizantes", price: 90.00, desc: "Oximetolona de alta concentración Landerlan. Potente agente de desarrollo muscular.", img: "https://http2.mlstatic.com/D_NQ_NP_902733-MLA87626069368_072025-O.webp" },
+            { id: 89, name: "OXANDROLAND 5MG 100 COMPRIMIDOS", category: "anabolizantes", price: 285.00, desc: "Oxandrolona pura en dosis moderada Landerlan. Ideal para tonificación y fuerza.", img: "https://http2.mlstatic.com/D_NQ_NP_992683-MLM96140066145_102025-O.webp" },
+            { id: 90, name: "OXANDROLAND 10MG 50COMPRIMIDOS", category: "anabolizantes", price: 285.00, desc: "Oxandrolona optimizada de 10mg Landerlan para máximo rendimiento metabólico.", img: "https://http2.mlstatic.com/D_NQ_NP_959914-MLM104462058780_012026-O.webp" },
+            { id: 91, name: "PROPIONATE DE TESTOSTERONE 100MG -10ML", category: "anabolizantes", price: 150.00, desc: "Propionato de testosterona de acción rápida Landerlan. Vial de 10ml.", img: "https://cpimg.tistatic.com/10160275/b/4/testo-sterone-propionate-100-mg-injection-vial..jpg" },
+            { id: 92, name: "DROSTANOLONA 100MG - 10ML", category: "anabolizantes", price: 200.00, desc: "Drostanolona (Masteron) Landerlan. Máxima dureza muscular y estética competitiva.", img: "https://http2.mlstatic.com/D_NQ_NP_996105-MLA101058184088_122025-O.webp" },
+            { id: 93, name: "TREMBOLONE ENANTATO 100MG - 10ML", category: "anabolizantes", price: 215.00, desc: "Enantato de trembolona de liberación prolongada Landerlan para ciclos de calidad.", img: "https://http2.mlstatic.com/D_NQ_NP_893087-MLM104250204254_012026-O.webp" },
+            { id: 94, name: "TREMBOLONE - ACETATO 100MG - 10ML", category: "anabolizantes", price: 215.00, desc: "Acetato de trembolona de acción inmediata Landerlan. Máxima potencia.", img: "https://http2.mlstatic.com/D_NQ_NP_830153-MLA105593651685_012026-O.webp" },
+            { id: 95, name: "DURATESTOLAND PLUS 250ML - 10ML", category: "anabolizantes", price: 200.00, desc: "Mezcla inteligente de testosteronas (Sustanon) por Landerlan. Vial de 10ml.", img: "https://http2.mlstatic.com/D_NQ_NP_855925-MLM95713457890_102025-O.webp" },
+            { id: 96, name: "TESTENAT DEPOT 250MG - 10ML", category: "anabolizantes", price: 185.00, desc: "Enantato de testosterona premium Landerlan. Base fundamental para rendimiento.", img: "https://http2.mlstatic.com/D_NQ_NP_640145-MLM90177152310_082025-O.webp" },
+            { id: 97, name: "METENOLONA E (PRIMOBOLAN) 100MG/ML - 10ML", category: "anabolizantes", price: 430.00, desc: "Enantato de metenolona de alta pureza Landerlan. El estándar de oro en estética.", img: "https://http2.mlstatic.com/D_NQ_NP_706063-MLA105020923720_012026-O.webp" },
+            { id: 98, name: "BOLDENONA 250MG/ML - 10ML", category: "anabolizantes", price: 195.00, desc: "Undecilenato de boldenona Landerlan. Promueve vascularidad y desarrollo constante.", img: "https://http2.mlstatic.com/D_NQ_NP_932257-MLA101058226148_122025-O.webp" },
+            { id: 99, name: "DECALAND DEPOT 200MG/ML - 10ML", category: "anabolizantes", price: 190.00, desc: "Decanato de nandrolona Landerlan. Soporte articular y desarrollo de masa masiva.", img: "https://http2.mlstatic.com/D_NQ_NP_702907-MLM75913933256_042024-O.webp" },
+            { id: 100, name: "TESTOLAND DEPOT 100MG/ML -", category: "anabolizantes", price: 130.00, desc: "Cipionato de testosterona Landerlan. Excelente tasa de absorción y estabilidad.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnWeiDpCX59qa_yhRtIugXei4Fa-BYZCzYw&s" },
+            { id: 101, name: "SUSTANON", category: "anabolizantes", price: 620.00, desc: "Fórmula compuesta multiéster de testosterona de la prestigiosa línea Royal.", img: "https://http2.mlstatic.com/D_NQ_NP_866063-MLA91206994452_092025-O.webp" },
+            { id: 102, name: "NANDROLONA D", category: "anabolizantes", price: 650.00, desc: "Decanato de nandrolona premium Royal para optimización de fuerza estructural.", img: "https://http2.mlstatic.com/D_NQ_NP_769625-MLM94579932757_102025-O.webp" },
+            { id: 103, name: "TEXTOTEX E250", category: "anabolizantes", price: 440.00, desc: "Enantato de testosterona de alta concentración desarrollado por Syntex Labs.", img: "https://getfit.mx/cdn/shop/products/textotexx.png?v=1773992809" },
+            { id: 104, name: "TEXTOTEXB350", category: "anabolizantes", price: 430.00, desc: "Fórmula avanzada híbrida de testosterona Syntex Labs de alta densidad.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTFPzQt8VcmCUFPmcuxBc7fcgVPWqBnfl2vQ&s" },
+            { id: 105, name: "TEXTOTEX CYP 250", category: "anabolizantes", price: 380.00, desc: "Cipionato de testosterona premium Syntex Labs para niveles estables y óptimos.", img: "https://image.jimcdn.com/app/cms/image/transf/none/path/s503e10c78b0be4d3/image/ic1e3c7d58b0953a3/version/1700200491/image.jpg" },
+            { id: 106, name: "NANDROTEX NPP", category: "anabolizantes", price: 420.00, desc: "Fenilpropionato de nandrolona de acción corta por Syntex Labs.", img: "https://http2.mlstatic.com/D_Q_NP_2X_605993-MLA104556752330_012026-P.webp" },
+            { id: 107, name: "MULTIVITAMINICO - 120 COMPRIMIDOS COOPER", category: "anabolizantes", price: 650.00, desc: "Complejo vitamínico y mineral de grado clínico para atletas de alta demanda.", img: "https://m.media-amazon.com/images/I/51eUwg7C-2L._AC_UF1000,1000_QL80_.jpg" },
+            { id: 108, name: "ENANBOLIC - TESTOSTERONA ENANTHATE 200MG/ML", category: "anabolizantes", price: 1290.00, desc: "Enantato de testosterona certificado por Cooper Laboratories. Calidad médica.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhhOwUNSzxQi-2L6YhA_ExqjFyRyiCp-oqzA&s" },
+            { id: 109, name: "PROBOLIC -TESTOSTERONA PROPIONATE 100MG/ML", category: "anabolizantes", price: 700.00, desc: "Propionato de testosterona Cooper. Pureza absoluta de acción inmediata.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-OCPIiSYPOxzsXhs7J0hedif7WBOhjtRBw&s" },
+            { id: 110, name: "SUSOBOLIC - TESTORENE 250MG /ML -COOPER", category: "anabolizantes", price: 870.00, desc: "Mezcla de testosteronas premium Susobolic de laboratorios Cooper.", img: "https://lh3.googleusercontent.com/c3XIAbzD4UCxO6dcNeBT6mW3MEcd470-QkPu9WtpiTo5IZZnplQeTG-9VuuhZJ0AVb7wMSY_XZU_vt8hCRvfB_DMmghrlG2J7nIjLOAyCogzHBM" },
+            { id: 111, name: "DECABOLIC - NANDROLONE DECANOATE", category: "anabolizantes", price: 870.00, desc: "Decanato de nandrolona Cooper Laboratories. Grado de exportación premium.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs2uXnoab8js-qYtOToIB0DZHuVwYcp1My3g&s" },
+            { id: 112, name: "BOLBOLIC - BOLDENONE UNCECYLENATE", category: "anabolizantes", price: 990.00, desc: "Undecilenato de boldenona Cooper. Grado de exportación premium.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLpt4g0491FH8QOo1m232LNfsuI8QdPG3zeQ&s" },
+            { id: 113, name: "NABOLIC - PH - NANDROLONE PHENYLPROPIONATE", category: "anabolizantes", price: 840.00, desc: "Fenilpropionato de nandrolona Cooper para atletas enfocados en calidad limpia.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4AFRFrbYdj-D-8xD93A6sRnTpj9duOPx68w&s" },
+            { id: 114, name: "WINOBOLIC - COOPER", category: "anabolizantes", price: 730.00, desc: "Estanozolol de alta pureza Cooper Laboratories para rendimiento de vanguardia.", img: "https://cooperpharma.com/images/products/winbolic.png" },
+            { id: 115, name: "HGH-SOMATROPIN - COOPER", category: "anabolizantes", price: 4800.00, desc: "Hormona de crecimiento humano (Somatropina) Cooper de pureza biológica máxima.", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbgXSaeM-wlNmkXUMDzQO_d4d0RFqBPqVzQ&s" }
 ];
-        
 
         let cart = [];
+        let isCheckoutFormView = false;
 
         window.addEventListener('DOMContentLoaded', () => {
+            renderProducts('all');
+            updateCartUI();
             setTimeout(() => {
                 const intro = document.getElementById('intro-screen');
                 intro.style.opacity = '0';
                 intro.style.visibility = 'hidden';
-                document.body.classList.remove('overflow-hidden');
             }, 2800);
         });
 
         function renderProducts(categoryFilter = 'all') {
             const grid = document.getElementById('products-grid');
             grid.innerHTML = '';
-
-            const filtered = categoryFilter === 'all' 
-                ? products 
-                : products.filter(p => p.category === categoryFilter);
+            const filtered = categoryFilter === 'all' ? products : products.filter(p => p.category === categoryFilter);
 
             filtered.forEach(product => {
                 const card = document.createElement('div');
                 card.className = "bg-white border border-stone-100 rounded p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group";
-                
                 card.innerHTML = `
                     <div>
                         <div class="h-52 w-full bg-stone-50 rounded flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 overflow-hidden">
-                            <img src="${product.img}" 
-                                 alt="${product.name}" 
-                                 class="h-full w-full object-contain p-4"
-                                 onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
+                            <img src="${product.img}" alt="${product.name}" class="h-full w-full object-contain p-4" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
                         </div>
                         <span class="text-[10px] uppercase font-bold tracking-widest text-amber-600 mb-1 block">${product.category}</span>
                         <h4 class="font-serif text-lg font-semibold text-emerald-950 mb-2">${product.name}</h4>
@@ -637,9 +372,7 @@
                     <div>
                         <div class="flex items-center justify-between pt-4 border-t border-stone-50">
                             <span class="font-serif text-lg font-bold text-stone-900">Bs. ${product.price.toFixed(2)}</span>
-                            <button onclick="addToCart(${product.id})" class="bg-stone-50 hover:bg-emerald-950 text-emerald-950 hover:text-white transition-colors duration-300 px-3 py-2 rounded text-xs uppercase font-medium tracking-wider">
-                                Agregar +
-                            </button>
+                            <button onclick="addToCart(${product.id})" class="bg-stone-50 hover:bg-emerald-950 text-emerald-950 hover:text-white transition-colors duration-300 px-3 py-2 rounded text-xs uppercase font-medium tracking-wider">Agregar +</button>
                         </div>
                     </div>
                 `;
@@ -649,12 +382,10 @@
 
         function filterCategory(cat) {
             renderProducts(cat);
-            
             document.querySelectorAll('.cat-btn').forEach(btn => {
                 btn.classList.remove('bg-emerald-950', 'text-white');
                 btn.classList.add('text-stone-600', 'hover:bg-stone-100');
             });
-
             const activeBtn = document.getElementById(`btn-${cat}`);
             if (activeBtn) {
                 activeBtn.classList.remove('text-stone-600', 'hover:bg-stone-100');
@@ -663,13 +394,8 @@
         }
 
         function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         }
-        // --- REEMPLAZA DESDE AQUÍ ---
-
-        // Variable global para controlar si estamos viendo el carrito o el formulario
-        let isCheckoutFormView = false;
 
         function toggleCart(open) {
             const sidebar = document.getElementById('cart-sidebar');
@@ -685,24 +411,17 @@
                 backdrop.classList.add('opacity-0', 'pointer-events-none');
                 backdrop.classList.remove('opacity-100');
                 panel.classList.add('translate-x-full');
-                // Al cerrar, reiniciamos la vista al carrito normal tras la animación
-                setTimeout(() => {
-                    sidebar.classList.add('pointer-events-none');
-                    isCheckoutFormView = false;
-                    updateCartUI(); 
-                }, 500);
+                setTimeout(() => sidebar.classList.add('pointer-events-none'), 500);
             }
         }
 
         function addToCart(productId) {
             const product = products.find(p => p.id === productId);
-            const exists = cart.find(item => item.id === productId);
+            if (!product) return;
 
-            if (exists) {
-                exists.quantity += 1;
-            } else {
-                cart.push({ ...product, quantity: 1 });
-            }
+            const exists = cart.find(item => item.id === productId);
+            if (exists) exists.quantity += 1;
+            else cart.push({ ...product, quantity: 1 });
 
             updateCartUI();
             toggleCart(true);
@@ -713,10 +432,24 @@
             if (!item) return;
 
             item.quantity += amount;
-            if (item.quantity <= 0) {
-                cart = cart.filter(p => p.id !== id);
-            }
+            if (item.quantity <= 0) cart = cart.filter(p => p.id !== id);
+
             updateCartUI();
+        }
+
+        function setCartAction(mode) {
+            const btn = document.getElementById('cart-action-btn');
+            if (!btn) return;
+
+            if (mode === 'process') {
+                btn.innerText = 'CONFIRMAR Y ENVIAR PEDIDO';
+                btn.onclick = processOrder;
+                btn.className = 'w-full bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold text-xs tracking-widest uppercase py-4 transition-colors rounded shadow-md';
+            } else {
+                btn.innerText = 'Proceder al Pago';
+                btn.onclick = checkout;
+                btn.className = 'w-full bg-emerald-950 hover:bg-emerald-900 text-white font-medium text-xs tracking-widest uppercase py-4 transition-colors rounded shadow-md';
+            }
         }
 
         function updateCartUI() {
@@ -725,62 +458,51 @@
             const totalEl = document.getElementById('cart-total');
 
             const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
-            if (totalItems > 0) {
-                badge.innerText = totalItems;
-                badge.classList.remove('opacity-0');
-            } else {
-                badge.classList.add('opacity-0');
-            }
+            badge.innerText = totalItems;
+            badge.classList.toggle('opacity-0', totalItems === 0);
 
             if (cart.length === 0) {
                 container.innerHTML = `<p class="text-stone-400 text-center py-8 font-light text-sm">El carrito está vacío.</p>`;
-                totalEl.innerText = "Bs. 0.00";
+                totalEl.innerText = 'Bs. 0.00';
+                setCartAction('checkout');
+                isCheckoutFormView = false;
                 return;
             }
 
-            // Si estamos en la vista del formulario, no redibujamos la lista de productos
-            if (isCheckoutFormView) return;
+            let subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 
-            container.innerHTML = '';
-            let subtotal = 0;
-
-            cart.forEach(item => {
-                subtotal += item.price * item.quantity;
-                
-                const div = document.createElement('div');
-                div.className = "flex items-center justify-between border-b border-stone-100 pb-4";
-                
-                div.innerHTML = `
-                    <div class="flex items-center gap-3">
-                        <div class="bg-stone-50 w-12 h-12 rounded flex items-center justify-center overflow-hidden border border-stone-100 p-1">
-                            <img src="${item.img}" alt="${item.name}" class="h-full w-full object-contain" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
+            if (!isCheckoutFormView) {
+                container.innerHTML = '';
+                cart.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = "flex items-center justify-between border-b border-stone-100 pb-4";
+                    div.innerHTML = `
+                        <div class="flex items-center gap-3">
+                            <div class="bg-stone-50 w-12 h-12 rounded flex items-center justify-center overflow-hidden border border-stone-100 p-1">
+                                <img src="${item.img}" alt="${item.name}" class="h-full w-full object-contain" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-semibold text-emerald-950">${item.name}</h5>
+                                <p class="text-xs text-stone-400 font-light">Bs. ${item.price.toFixed(2)} c/u</p>
+                            </div>
                         </div>
-                        <div>
-                            <h5 class="text-xs font-semibold text-emerald-950">${item.name}</h5>
-                            <p class="text-xs text-stone-400 font-light">Bs. ${item.price.toFixed(2)} c/u</p>
+                        <div class="flex items-center gap-3">
+                            <div class="flex items-center border border-stone-200 rounded overflow-hidden">
+                                <button onclick="changeQuantity(${item.id}, -1)" class="px-2 py-0.5 bg-stone-50 hover:bg-stone-100 text-xs">-</button>
+                                <span class="px-3 text-xs font-medium">${item.quantity}</span>
+                                <button onclick="changeQuantity(${item.id}, 1)" class="px-2 py-0.5 bg-stone-50 hover:bg-stone-100 text-xs">+</button>
+                            </div>
+                            <span class="text-xs font-serif font-bold text-stone-800 w-16 text-right">Bs. ${(item.price * item.quantity).toFixed(2)}</span>
                         </div>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <div class="flex items-center border border-stone-200 rounded overflow-hidden">
-                            <button onclick="changeQuantity(${item.id}, -1)" class="px-2 py-0.5 bg-stone-50 hover:bg-stone-100 text-xs">-</button>
-                            <span class="px-3 text-xs font-medium">${item.quantity}</span>
-                            <button onclick="changeQuantity(${item.id}, 1)" class="px-2 py-0.5 bg-stone-50 hover:bg-stone-100 text-xs">+</button>
-                        </div>
-                        <span class="text-xs font-serif font-bold text-stone-800 w-16 text-right">Bs. ${(item.price * item.quantity).toFixed(2)}</span>
-                    </div>
-                `;
-                container.appendChild(div);
-            });
+                    `;
+                    container.appendChild(div);
+                });
+                setCartAction('checkout');
+            } else {
+                setCartAction('process');
+            }
 
             totalEl.innerText = `Bs. ${subtotal.toFixed(2)}`;
-
-            // Asegurar que el botón inferior esté en modo "Proceder al pago"
-            const actionBtn = document.querySelector('#cart-panel button[onclick^="checkout"], #cart-panel button[onclick^="processOrder"]');
-            if (actionBtn) {
-                actionBtn.innerText = "PROCEDER AL PAGO";
-                actionBtn.setAttribute("onclick", "checkout()");
-                actionBtn.className = "w-full bg-emerald-950 hover:bg-emerald-900 text-white font-medium text-xs tracking-widest uppercase py-4 transition-colors rounded shadow-md";
-            }
         }
 
         function checkout() {
@@ -789,53 +511,46 @@
                 return;
             }
 
-            const container = document.getElementById('cart-items-container');
-            const actionBtn = document.querySelector('#cart-panel button[onclick="checkout()"]');
-
-            if (!isCheckoutFormView) {
-                isCheckoutFormView = true;
-                
-                // Reemplazamos la lista de productos por el formulario de datos reales
-                container.innerHTML = `
-                    <div class="space-y-4 animate-fade-in p-1">
-                        <p class="text-xs uppercase tracking-wider text-stone-400 font-semibold mb-2">Datos de Entrega</p>
-                        <div>
-                            <label class="block text-xs text-stone-500 mb-1">Nombre Completo *</label>
-                            <input type="text" id="checkout-name" required class="w-full border border-stone-200 p-2 rounded text-sm focus:outline-emerald-800" placeholder="Ej. Juan Pérez">
-                        </div>
-                        <div>
-                            <label class="block text-xs text-stone-500 mb-1">Teléfono / WhatsApp *</label>
-                            <input type="tel" id="checkout-phone" required class="w-full border border-stone-200 p-2 rounded text-sm focus:outline-emerald-800" placeholder="Ej. 77012345">
-                        </div>
-                        <div>
-                            <label class="block text-xs text-stone-500 mb-1">Dirección de Envío *</label>
-                            <textarea id="checkout-address" required rows="2" class="w-full border border-stone-200 p-2 rounded text-sm focus:outline-emerald-800" placeholder="Ej. Av. San Martín, Calle 4 Oeste"></textarea>
-                        </div>
-                        <div>
-                            <label class="block text-xs text-stone-500 mb-1">Método de Pago Preferido *</label>
-                            <select id="checkout-payment" class="w-full border border-stone-200 p-2 rounded text-sm focus:outline-emerald-800 bg-white">
-                                <option value="Transferencia Bancaria / QR">Transferencia Bancaria / Simple QR</option>
-                                <option value="Efectivo contra entrega">Efectivo contra entrega</option>
-                            </select>
-                        </div>
-                        <button onclick="isCheckoutFormView = false; updateCartUI();" class="text-xs text-emerald-800 hover:underline mt-2 inline-block">
-                            ← Volver a revisar el carrito
-                        </button>
+            isCheckoutFormView = true;
+            document.getElementById('cart-items-container').innerHTML = `
+                <div class="space-y-4 p-1">
+                    <p class="text-xs uppercase tracking-wider text-stone-400 font-semibold mb-2">Datos de Entrega</p>
+                    <div>
+                        <label class="block text-xs text-stone-500 mb-1">Nombre Completo *</label>
+                        <input type="text" id="checkout-name" required class="w-full border border-stone-200 p-2 rounded text-sm focus:outline-emerald-800" placeholder="Ej. Juan Pérez">
                     </div>
-                `;
-                
-                // Cambiamos la acción del botón inferior del menú para que procese el pedido
-                actionBtn.innerText = "CONFIRMAR Y ENVIAR PEDIDO";
-                actionBtn.setAttribute("onclick", "processOrder()");
-                actionBtn.className = "w-full bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold text-xs tracking-widest uppercase py-4 transition-colors rounded shadow-md";
-            }
+                    <div>
+                        <label class="block text-xs text-stone-500 mb-1">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="checkout-phone" required class="w-full border border-stone-200 p-2 rounded text-sm focus:outline-emerald-800" placeholder="Ej. 77012345">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-stone-500 mb-1">Dirección de Envío *</label>
+                        <textarea id="checkout-address" required rows="2" class="w-full border border-stone-200 p-2 rounded text-sm focus:outline-emerald-800" placeholder="Ej. Av. San Martín, Calle 4 Oeste"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-xs text-stone-500 mb-1">Método de Pago Preferido *</label>
+                        <select id="checkout-payment" class="w-full border border-stone-200 p-2 rounded text-sm focus:outline-emerald-800 bg-white">
+                            <option value="Transferencia Bancaria / QR">Transferencia Bancaria / Simple QR</option>
+                            <option value="Efectivo contra entrega">Efectivo contra entrega</option>
+                        </select>
+                    </div>
+                    <button onclick="backToCart()" class="text-xs text-emerald-800 hover:underline mt-2 inline-block">← Volver a revisar el carrito</button>
+                </div>
+            `;
+            setCartAction('process');
+            updateCartUI();
+        }
+
+        function backToCart() {
+            isCheckoutFormView = false;
+            updateCartUI();
         }
 
         function processOrder() {
-            const name = document.getElementById('checkout-name').value.trim();
-            const phone = document.getElementById('checkout-phone').value.trim();
-            const address = document.getElementById('checkout-address').value.trim();
-            const paymentMethod = document.getElementById('checkout-payment').value;
+            const name = document.getElementById('checkout-name')?.value.trim();
+            const phone = document.getElementById('checkout-phone')?.value.trim();
+            const address = document.getElementById('checkout-address')?.value.trim();
+            const paymentMethod = document.getElementById('checkout-payment')?.value;
 
             if (!name || !phone || !address) {
                 alert("Por favor, completa todos los campos requeridos.");
@@ -843,128 +558,33 @@
             }
 
             let subtotal = 0;
-            let itemsText = "";
-            
-            // Recorremos el carrito para armar el texto del mensaje
+            let itemsText = '';
+
             cart.forEach((item, index) => {
                 const itemTotal = item.price * item.quantity;
                 subtotal += itemTotal;
                 itemsText += `${index + 1}. ${item.name} (x${item.quantity}) - Bs. ${itemTotal.toFixed(2)}\n`;
             });
 
-            // CONFIGURACIÓN DE TU NÚMERO DE WHATSAPP
-            // IMPORTANTE: Cambia el 59170000000 por tu número real (Mantén el 591 de Bolivia adelante sin el +)
-            const BUSINESS_PHONE = "59170000000"; 
-
-            // Estructura del texto formateado para WhatsApp
             const message = `🏛️ *NUEVO PEDIDO - NATURAL+*\n` +
-                            `--------------------------------------\n` +
-                            `👤 *Cliente:* ${name}\n` +
-                            `📞 *Celular:* ${phone}\n` +
-                            `📍 *Dirección:* ${address}\n` +
-                            `💳 *Pago:* ${paymentMethod}\n` +
-                            `--------------------------------------\n` +
-                            `📦 *Detalle del Pedido:*\n${itemsText}\n` +
-                            `💰 *TOTAL A PAGAR: Bs. ${subtotal.toFixed(2)}*\n` +
-                            `--------------------------------------\n` +
-                            `✨ _Por favor, envíeme los datos de cuenta o QR para realizar el pago._`;
+                `--------------------------------------\n` +
+                `👤 *Cliente:* ${name}\n` +
+                `📞 *Celular:* ${phone}\n` +
+                `📍 *Dirección:* ${address}\n` +
+                `💳 *Pago:* ${paymentMethod}\n` +
+                `--------------------------------------\n` +
+                `📦 *Detalle del Pedido:*\\n${itemsText}\\n` +
+                `💰 *TOTAL A PAGAR: Bs. ${subtotal.toFixed(2)}*\\n` +
+                `--------------------------------------\\n` +
+                `✨ _Por favor, envíeme los datos de cuenta o QR para realizar el pago._`;
 
-            // Codificación segura del texto para la URL
-            const whatsappUrl = `https://wa.me/59169459368?text=${encodeURIComponent(message)}`;
+            window.open(`https://wa.me/59169459368?text=${encodeURIComponent(message)}`, '_blank');
 
-            // Abre WhatsApp en una pestaña nueva enviando el pedido listo
-            window.open(whatsappUrl, '_blank');
-
-            // Limpiamos el carrito tras enviar la orden
             cart = [];
             isCheckoutFormView = false;
             updateCartUI();
             toggleCart(false);
         }
-
-        // --- HASTA AQUÍ ---
-
-        
-
-        function addToCart(productId) {
-            const product = products.find(p => p.id === productId);
-            const exists = cart.find(item => item.id === productId);
-
-            if (exists) {
-                exists.quantity += 1;
-            } else {
-                cart.push({ ...product, quantity: 1 });
-            }
-
-            updateCartUI();
-            toggleCart(true);
-        }
-
-        function changeQuantity(id, amount) {
-            const item = cart.find(p => p.id === id);
-            if (!item) return;
-
-            item.quantity += amount;
-            if (item.quantity <= 0) {
-                cart = cart.filter(p => p.id !== id);
-            }
-            updateCartUI();
-        }
-
-        function updateCartUI() {
-            const container = document.getElementById('cart-items-container');
-            const badge = document.getElementById('cart-badge');
-            const totalEl = document.getElementById('cart-total');
-
-            const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
-            if (totalItems > 0) {
-                badge.innerText = totalItems;
-                badge.classList.remove('opacity-0');
-            } else {
-                badge.classList.add('opacity-0');
-            }
-
-            if (cart.length === 0) {
-                container.innerHTML = `<p class="text-stone-400 text-center py-8 font-light text-sm">El carrito está vacío.</p>`;
-                totalEl.innerText = "Bs. 0.00";
-                return;
-            }
-
-            container.innerHTML = '';
-            let subtotal = 0;
-
-            cart.forEach(item => {
-                subtotal += item.price * item.quantity;
-                
-                const div = document.createElement('div');
-                div.className = "flex items-center justify-between border-b border-stone-100 pb-4";
-                
-                div.innerHTML = `
-                    <div class="flex items-center gap-3">
-                        <div class="bg-stone-50 w-12 h-12 rounded flex items-center justify-center overflow-hidden border border-stone-100 p-1">
-                            <img src="${item.img}" alt="${item.name}" class="h-full w-full object-contain" onerror="this.onerror=null; this.src='${FALLBACK_IMAGE}';">
-                        </div>
-                        <div>
-                            <h5 class="text-xs font-semibold text-emerald-950">${item.name}</h5>
-                            <p class="text-xs text-stone-400 font-light">Bs. ${item.price.toFixed(2)} c/u</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <div class="flex items-center border border-stone-200 rounded overflow-hidden">
-                            <button onclick="changeQuantity(${item.id}, -1)" class="px-2 py-0.5 bg-stone-50 hover:bg-stone-100 text-xs">-</button>
-                            <span class="px-3 text-xs font-medium">${item.quantity}</span>
-                            <button onclick="changeQuantity(${item.id}, 1)" class="px-2 py-0.5 bg-stone-50 hover:bg-stone-100 text-xs">+</button>
-                        </div>
-                        <span class="text-xs font-serif font-bold text-stone-800 w-16 text-right">Bs. ${(item.price * item.quantity).toFixed(2)}</span>
-                    </div>
-                `;
-                container.appendChild(div);
-            });
-
-            totalEl.innerText = `Bs. ${subtotal.toFixed(2)}`;
-        }
-
-        
     </script>
 </body>
 </html>
